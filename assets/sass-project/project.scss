@@ -11,18 +11,6 @@
 		padding-bottom: ($line-height + $margin-sm * 4 + 1);
 	}
 
-	.ui-content-header {
-		background-position: 50% 50%;
-		background-repeat: no-repeat;
-		background-size: cover;
-		margin-bottom: (($line-height / 2 + $margin-md * 2) * -1);
-		padding-top: ($header-height + $margin-sm);
-		padding-bottom: ($line-height / 2 + $margin-md * 2);
-		.page-brand & {
-			background-image: url(#{$css-path}/images/bg/brand.jpg);
-		}
-	}
-
 	.ui-footer {
 		border-top: 1px solid $black-divider;
 		text-align: center;
