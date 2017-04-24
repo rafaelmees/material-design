@@ -44,8 +44,7 @@
 		transform-origin: 100% 0;
 	}
 	li {
-		> a,
-		> .a {
+		> a {
 			color: $black-text-solid;
 			@include text-overflow();
 			&:focus,
@@ -54,8 +53,7 @@
 			}
 		}
 		&.active {
-			> a,
-			> .a {
+			> a {
 				background-color: $offwhite-solid;
 			}
 		}

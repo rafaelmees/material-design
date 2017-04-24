@@ -14,19 +14,33 @@
 	<!-- ... -->
 </head>
 <body class="page-brand">
-	<nav class="menu menu-left nav-drawer nav-drawer-md" id="ui_menu">
+	<nav class="menu menu-left nav-drawer" id="ui_menu">
 		<div class="menu-scroll">
+			<div class="menu-top">
+				<div class="menu-top-img">
+					<img alt="John Smith" src="../images/samples/landscape.jpg">
+				</div>
+				<div class="menu-top-info">
+					<a class="menu-top-user" href="javascript:void(0)"><span class="avatar avatar-inline margin-right"><img alt="alt text for John Smith avatar" src="../images/users/avatar-001.jpg"></span>John Smith</a>
+				</div>
+				<div class="menu-top-info-sub">
+					<small>Some additional information about John Smith</small>
+				</div>
+			</div>
 			<div class="menu-content">
 				<a class="menu-logo" href="index.html">Material</a>
 				<ul class="nav">
 					<li>
-						<a class="waves-attach" data-toggle="collapse" href="#ui_menu_components">Components</a>
+						<a class="waves-attach" data-toggle="collapse" href="#ui_menu_components">
+							<i class="icon icon-lg">settings</i>
+							Components
+						</a>
 						<ul class="menu-collapse collapse in" id="ui_menu_components">
 							<li>
 								<a class="waves-attach" href="ui-button.html">Buttons</a>
 							</li>
 							<li>
-								<a class="waves-attach" href="ui-button-fab.html">Buttons<small class="margin-left-xs">(Floating Action Button)</small></a>
+								<a class="waves-attach" href="ui-button-fab.html">Buttons: Floating Action Button</a>
 							</li>
 							<li>
 								<a class="waves-attach" href="ui-card.html">Cards</a>
@@ -70,7 +84,10 @@
 						</ul>
 					</li>
 					<li>
-						<a class="collapsed waves-attach" data-toggle="collapse" href="#ui_menu_extras">Extras</a>
+						<a class="collapsed waves-attach" data-toggle="collapse" href="#ui_menu_extras">
+							<i class="icon icon-lg">settings</i>
+							Extras
+						</a>
 						<ul class="menu-collapse collapse" id="ui_menu_extras">
 							<li>
 								<a class="waves-attach" href="ui-avatar.html">Avatars</a>
@@ -90,7 +107,10 @@
 						</ul>
 					</li>
 					<li>
-						<a class="collapsed waves-attach" data-toggle="collapse" href="#ui_menu_javascript">Javascript</a>
+						<a class="collapsed waves-attach" data-toggle="collapse" href="#ui_menu_javascript">
+							<i class="icon icon-lg">settings</i>
+							Javascript
+						</a>
 						<ul class="menu-collapse collapse" id="ui_menu_javascript">
 							<li>
 								<a class="waves-attach" href="ui-affix.html">Affix</a>
@@ -110,7 +130,10 @@
 						</ul>
 					</li>
 					<li>
-						<a class="collapsed waves-attach" data-toggle="collapse" href="#ui_menu_samples">Sample Pages</a>
+						<a class="collapsed waves-attach" data-toggle="collapse" href="#ui_menu_samples">
+							<i class="icon icon-lg">settings</i>
+							Sample Pages
+						</a>
 						<ul class="menu-collapse collapse" id="ui_menu_samples">
 							<li>
 								<a class="waves-attach" href="page-login.html">Login Page</a>
@@ -137,63 +160,34 @@
 		<span class="header-logo header-affix" data-offset-top="213" data-spy="affix">Navigation Drawers</span>
 
 		<ul class="nav nav-list pull-right">
-			<li>
-				<a data-toggle="menu" href="#ui_menu_profile">
+			<li class="dropdown margin-right">
+				<a class="dropdown-toggle padding-left-no padding-right-no" data-toggle="dropdown">
 					<span class="access-hide">John Smith</span>
 					<span class="avatar avatar-sm"><img alt="alt text for John Smith avatar" src="../images/users/avatar-001.jpg"></span>
 				</a>
+				<ul class="dropdown-menu dropdown-menu-right">
+					<li>
+						<a class="waves-attach" href="javascript:void(0)">
+							<i class="icon icon-lg">account_box</i>
+							Profile Settings
+						</a>
+					</li>
+					<li>
+						<a class="waves-attach" href="javascript:void(0)">
+							<i class="icon icon-lg">add_to_photos</i>
+							Upload Photo
+						</a>
+					</li>
+					<li>
+						<a class="waves-attach" href="page-login.html">
+							<i class="icon icon-lg">exit_to_app</i>
+							Logout
+						</a>
+					</li>
+				</ul>
 			</li>
 		</ul>
 	</header>
-	<nav aria-hidden="true" class="menu menu-right" id="ui_menu_profile" tabindex="-1">
-		<div class="menu-scroll">
-			<div class="menu-top">
-				<div class="menu-top-img">
-					<img alt="John Smith" src="../images/samples/landscape.jpg">
-				</div>
-				<div class="menu-top-info">
-					<a class="menu-top-user" href="javascript:void(0)"><span class="avatar avatar-inline margin-right"><img alt="alt text for John Smith avatar" src="../images/users/avatar-001.jpg"></span>John Smith</a>
-				</div>
-				<div class="menu-top-info-sub">
-					<small>Some additional information about John Smith</small>
-				</div>
-			</div>
-			<div class="menu-content">
-				<ul class="nav">
-					<li>
-						<a class="waves-attach" href="javascript:void(0)">
-							Profile Settings
-							<span class="menu-collapse-toggle collapsed waves-attach" data-target="#ui_menu_profile_settings" data-toggle="collapse">
-								<div class="menu-collapse-toggle-close">
-									<i class="icon icon-lg">close</i>
-								</div>
-								<div class="menu-collapse-toggle-default">
-									<i class="icon icon-lg">add</i>
-								</div>
-							</span>
-						</a>
-						<ul class="menu-collapse collapse" id="ui_menu_profile_settings">
-							<li>
-								<a class="waves-attach" href="javascript:void(0)">First Item</a>
-							</li>
-							<li>
-								<a class="waves-attach" href="javascript:void(0)">Another Item</a>
-							</li>
-							<li>
-								<a class="waves-attach" href="javascript:void(0)">Something Else</a>
-							</li>
-						</ul>
-					</li>
-					<li>
-						<a class="waves-attach" href="javascript:void(0)">Upload Photo</a>
-					</li>
-					<li>
-						<a class="waves-attach" href="page-login.html">Logout</a>
-					</li>
-				</ul>
-			</div>
-		</div>
-	</nav>
 	<main class="content">
 		<div class="content-header ui-content-header">
 			<div class="container">
