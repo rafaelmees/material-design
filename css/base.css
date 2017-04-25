@@ -2150,6 +2150,14 @@ template,
   .visible-xx-inline-block {
     display: inline-block !important;
   }
+
+  .margin-xx-no {
+    margin: 0 !important;
+  }
+
+  .padding-xx-no {
+    padding: 0 !important;
+  }
 }
 @media only screen and (min-width: 480px) and (max-width: 767px) {
   .hidden-xs {
@@ -2166,6 +2174,14 @@ template,
 
   .visible-xs-inline-block {
     display: inline-block !important;
+  }
+
+  .margin-xs-no {
+    margin: 0 !important;
+  }
+
+  .padding-xs-no {
+    padding: 0 !important;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -2184,6 +2200,14 @@ template,
   .visible-sm-inline-block {
     display: inline-block !important;
   }
+
+  .margin-sm-no {
+    margin: 0 !important;
+  }
+
+  .padding-sm-no {
+    padding: 0 !important;
+  }
 }
 @media only screen and (min-width: 992px) and (max-width: 1439px) {
   .hidden-md {
@@ -2201,6 +2225,14 @@ template,
   .visible-md-inline-block {
     display: inline-block !important;
   }
+
+  .margin-md-no {
+    margin: 0 !important;
+  }
+
+  .padding-md-no {
+    padding: 0 !important;
+  }
 }
 @media only screen and (min-width: 1440px) {
   .hidden-lg {
@@ -2217,6 +2249,14 @@ template,
 
   .visible-lg-inline-block {
     display: inline-block !important;
+  }
+
+  .margin-lg-no {
+    margin: 0 !important;
+  }
+
+  .padding-lg-no {
+    padding: 0 !important;
   }
 }
 .avatar {
@@ -5607,13 +5647,11 @@ html.no-touchevents .tile-action-show {
 
 .menu-logo {
   align-items: center;
-  border-bottom: 1px solid #dadada;
   color: #212121;
   display: flex;
   font-size: 20px;
   font-weight: 300;
   line-height: 28px;
-  margin-bottom: 8px;
   min-height: 56px;
   padding: 0 16px;
 }
