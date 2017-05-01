@@ -2507,19 +2507,19 @@ template,
   color: #212121;
   cursor: pointer;
   display: block;
-  font-size: 14px;
+  font-size: 20px;
   font-weight: 500;
-  height: 40px;
-  line-height: 20px;
+  height: 56px;
+  line-height: 28px;
   margin: 12px auto;
-  padding: 10px 0;
+  padding: 14px 10px 0;
   position: relative;
   text-align: center;
   transition-duration: 0.3s;
   transition-property: opacity, transform;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   user-select: none;
-  width: 40px;
+  width: 56px;
 }
 .fbtn:active, .fbtn:focus, .fbtn:hover {
   color: #212121;
@@ -2568,13 +2568,13 @@ template,
   color: white !important;
 }
 
-.fbtn-lg {
-  font-size: 20px;
-  height: 56px;
-  line-height: 28px;
-  padding-top: 14px;
-  padding-bottom: 14px;
-  width: 56px;
+.fbtn-sm {
+  font-size: 14px;
+  height: 40px;
+  line-height: 20px;
+  width: 40px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .fbtn-container {

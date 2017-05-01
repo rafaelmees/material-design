@@ -6,19 +6,19 @@
 	color: $black-text-solid;
 	cursor: pointer;
 	display: block;
-	font-size: $font-size;
+	font-size: $font-size-h4;
 	font-weight: $font-weight-medium;
-	height: $fbtn-height;
-	line-height: $line-height;
+	height: ($fbtn-height + $base * 2);
+	line-height: $line-height-h4;
 	margin: $margin-sm auto;
-	padding: (($fbtn-height - $line-height) / 2) 0;
+	padding: (($fbtn-height + $base * 2 - $line-height-h4) / 2) (($fbtn-height - $line-height) / 2) 0;
 	position: relative;
 	text-align: center;
 	transition-duration: 0.3s;
 	transition-property: opacity, transform;
 	transition-timing-function: $timing;
 	user-select: none;
-	width: $fbtn-height;
+	width: ($fbtn-height + $base * 2);
 	&:active,
 	&:focus,
 	&:hover {
@@ -56,13 +56,13 @@
 	}
 
 // size
-	.fbtn-lg {
-		font-size: $font-size-h4;
-		height: ($fbtn-height + $base * 2);
-		line-height: $line-height-h4;
-		padding-top: (($fbtn-height + $base * 2 - $line-height-h4) / 2);
-		padding-bottom: (($fbtn-height + $base * 2 - $line-height-h4) / 2);
-		width: ($fbtn-height + $base * 2);
+	.fbtn-sm {
+		font-size: $font-size;
+		height: $fbtn-height;
+		line-height: $line-height;
+		width: $fbtn-height;
+		padding-top: (($fbtn-height - $line-height) / 2);
+		padding-bottom: (($fbtn-height - $line-height) / 2);
 	}
 
 .fbtn-container {
