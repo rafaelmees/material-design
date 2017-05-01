@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta content="IE=edge" http-equiv="X-UA-Compatible">
 	<meta content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no, width=device-width" name="viewport">
-	<title>Toolbars - Material</title>
+	<title>Chips - Material</title>
 
 	<!-- css -->
 	<link href="../css/base.css" rel="stylesheet">
@@ -20,8 +20,8 @@
 				<a class="menu-logo" href="index.html">Material</a>
 				<ul class="nav">
 					<li>
-						<a class="waves-attach" data-toggle="collapse" href="#ui_menu_components">Components</a>
-						<ul class="menu-collapse collapse in" id="ui_menu_components">
+						<a class="collapsed waves-attach" data-toggle="collapse" href="#ui_menu_components">Components</a>
+						<ul class="menu-collapse collapse" id="ui_menu_components">
 							<li>
 								<a class="waves-attach" href="ui-button.html">Buttons</a>
 							</li>
@@ -64,14 +64,14 @@
 							<li>
 								<a class="waves-attach" href="ui-text-field.html">Text Fields</a>
 							</li>
-							<li class="active">
+							<li>
 								<a class="waves-attach" href="ui-toolbar.html">Toolbars</a>
 							</li>
 						</ul>
 					</li>
 					<li>
-						<a class="collapsed waves-attach" data-toggle="collapse" href="#ui_menu_extras">Extras</a>
-						<ul class="menu-collapse collapse" id="ui_menu_extras">
+						<a class="waves-attach" data-toggle="collapse" href="#ui_menu_extras">Extras</a>
+						<ul class="menu-collapse collapse in" id="ui_menu_extras">
 							<li>
 								<a class="waves-attach" href="ui-avatar.html">Avatars</a>
 							</li>
@@ -81,7 +81,7 @@
 							<li>
 								<a class="waves-attach" href="ui-label.html">Labels</a>
 							</li>
-							<li>
+							<li class="active">
 								<a class="waves-attach" href="ui-chip.html">Chips</a>
 							</li>
 							<li>
@@ -137,7 +137,7 @@
 		</ul>
 
 		<a class="header-logo header-affix-hide" data-offset-top="213" data-spy="affix" href="index.html">Material</a>
-		<span class="header-logo header-affix" data-offset-top="213" data-spy="affix">Toolbars</span>
+		<span class="header-logo header-affix" data-offset-top="213" data-spy="affix">Chips</span>
 
 		<ul class="nav nav-list pull-right">
 			<li class="dropdown margin-right">
@@ -164,7 +164,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-xx-12">
-						<h1 class="content-heading">Toolbars</h1>
+						<h1 class="content-heading">Chips</h1>
 					</div>
 				</div>
 			</div>
@@ -176,72 +176,43 @@
 						<div class="card">
 							<div class="card-main">
 								<div class="card-inner">
-									<p>Toolbars are responsive meta components that serve as navigation headers for your application or site. Toolbars appear a step above the sheet of paper affected by their actions.</p>
+									<p>Chips represent complex entities in small blocks, such as a contact.</p>
 								</div>
-							</div>
-						</div>
-						<h2 class="content-sub-heading">Basic Toolbars</h2>
-						<div class="card">
-							<div class="card-main">
-								<div class="card-inner">
-									<p>The header keeps its seam with the page, and is pushed off screen.</p>
-<pre>
-&lt;header class="header"&gt; ... &lt;/header&gt;
-</pre>
-								</div>
-							</div>
-						</div>
-						<div class="card">
-							<div class="card-main">
-								<div class="card-header">
-									<div class="card-inner">
-										<h3 class="h5 margin-bottom-no margin-top-no">Seamed</h3>
+								<div class="card-action">
+									<div class="card-action-btn pull-left">
+										<a class="btn btn-flat waves-attach" href="https://material.io/guidelines/components/chips.html" target="_blank">Material Design Documentation<span class="icon margin-left-sm">open_in_new</span></a>
 									</div>
 								</div>
-								<div class="card-inner">
-									<p>The header is presented as seamed with the page.</p>
-<pre>
-&lt;header class="header header-seamed"&gt; ... &lt;/header&gt;
-</pre>
-								</div>
 							</div>
 						</div>
 						<div class="card">
 							<div class="card-main">
-								<div class="card-header">
-									<div class="card-inner">
-										<h3 class="h5 margin-bottom-no margin-top-no">Standard</h3>
-									</div>
-								</div>
 								<div class="card-inner">
-									<p>The header is a step above the page content.</p>
+									<span class="chip">Chips</span>
 <pre>
-&lt;header class="header header-standard"&gt; ... &lt;/header&gt;
+&lt;span class="chip"&gt; ... &lt;/span&gt;
 </pre>
-								</div>
-							</div>
-						</div>
-						<div class="card">
-							<div class="card-main">
-								<div class="card-header">
-									<div class="card-inner">
-										<h3 class="h5 margin-bottom-no margin-top-no">Waterfall</h3>
-									</div>
-								</div>
-								<div class="card-inner">
-									<p>Similar to standard header, but header is initially presented as seamed with page, but then separates to form the step.</p>
+									<h3 class="h5">Avatar</h3>
+									<span class="chip">
+										<span class="avatar avatar-brand">
+											A
+										</span>
+										Chips
+									 </span>
 <pre>
-&lt;header class="header header-waterfall"&gt; ... &lt;/header&gt;
+&lt;span class="chip"&gt;
+    &lt;span class="avatar"&gt; ... &lt;/span&gt;
+    ...
+&lt;/span&gt;
 </pre>
-								</div>
-							</div>
-						</div>
-						<h2 class="content-sub-heading">Coloured Toolbars</h2>
-						<div class="card">
-							<div class="card-main">
-								<div class="card-inner">
-									<p>Add additional helper classes to apply background colours on toolbars: <code>.header-brand</code>, <code>.header-brand-accent</code>, <code>.header-green</code>, <code>.header-orange</code> &amp; <code>.header-red</code>.</p>
-									<p>Alternatively, add <code>.header-transparent</code> to remove background colours from toolbars.</p>
+									<h3 class="h5">Deletable</h3>
+									<span class="chip">Chips<i class="icon close">cancel</i></span>
+<pre>
+&lt;span class="chip"&gt;
+    ...
+    &lt;i class="icon close"&gt;cancel&lt;/i&gt;
+&lt;/span&gt;
+</pre>
 								</div>
 							</div>
 						</div>

@@ -2461,12 +2461,6 @@ template,
   color: white !important;
 }
 
-.btn-block {
-  display: block;
-  white-space: normal;
-  width: 100%;
-}
-
 .btn-flat {
   background-color: transparent;
   box-shadow: none;
@@ -2497,6 +2491,12 @@ template,
 
 .btn-flat.btn-red {
   color: #f44336 !important;
+}
+
+.btn-block {
+  display: block;
+  white-space: normal;
+  width: 100%;
 }
 
 .fbtn {
@@ -2915,6 +2915,32 @@ html.no-touchevents .fbtn:hover > .fbtn-text {
 .card-red .card-side {
   background-color: #d32f2f;
   color: white;
+}
+
+.chip {
+  display: inline-block;
+  height: 32px;
+  font-size: 13px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.54);
+  line-height: 32px;
+  padding: 0 12px;
+  border-radius: 50px;
+  background-color: #e0e0e0;
+}
+.chip .avatar {
+  margin: 0 8px 0 -12px;
+  height: 32px;
+  width: 32px;
+  float: left;
+  line-height: 32px;
+}
+.chip i.close {
+  cursor: pointer;
+  margin-right: -4px;
+  margin-left: 4px;
+  font-size: 1.4em;
+  vertical-align: -20%;
 }
 
 code,
@@ -5765,7 +5791,7 @@ html.no-touchevents .tile-action-show {
     display: block !important;
     overflow: visible;
     width: 256px;
-    z-index: 30;
+    z-index: 31;
   }
   .nav-drawer.in ~ .menu-backdrop {
     display: none;

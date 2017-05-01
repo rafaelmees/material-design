@@ -251,7 +251,7 @@
 			display: block !important;
 			overflow: visible;
 			width: ($grid-gutter * 16);
-			z-index: $header-base;
+			z-index: $header-base + 1;
 			&.in ~ .menu-backdrop {
 				display: none;
 				~ .menu-backdrop {
