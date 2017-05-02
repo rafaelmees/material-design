@@ -7,8 +7,7 @@
 	li {
 		display: block;
 		position: relative;
-		> a,
-		> .a {
+		> a {
 			align-items: center;
 			display: flex;
 			min-height: $nav-height;
@@ -17,6 +16,9 @@
 			&:focus,
 			&:hover {
 				text-decoration: none;
+			}
+			.icon {
+				margin-right: 16px;
 			}
 		}
 	}
@@ -37,8 +39,7 @@
 	flex-wrap: nowrap;
 	> li {
 		flex-grow: 1;
-		> a,
-		> .a {
+		> a {
 			justify-content: center;
 			text-align: center;
 		}

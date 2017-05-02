@@ -7,44 +7,14 @@
 	<title>Buttons: Floating Action Button - Material</title>
 
 	<!-- css -->
-	<link href="../css/base.min.css" rel="stylesheet">
-	<link href="../css/project.min.css" rel="stylesheet">
+	<link href="../css/base.css" rel="stylesheet">
+	<link href="../css/project.css" rel="stylesheet">
 	
 	<!-- favicon -->
 	<!-- ... -->
 </head>
 <body class="page-brand">
-	<header class="header header-transparent header-waterfall ui-header">
-		<ul class="nav nav-list pull-left">
-			<li>
-				<a data-toggle="menu" href="#ui_menu">
-					<span class="icon icon-lg">menu</span>
-				</a>
-			</li>
-		</ul>
-		<a class="header-logo header-affix-hide margin-left-no margin-right-no" data-offset-top="213" data-spy="affix" href="index.html">Material</a>
-		<span class="header-logo header-affix margin-left-no margin-right-no" data-offset-top="213" data-spy="affix">FAB</span>
-		<ul class="nav nav-list pull-right">
-			<li class="dropdown margin-right">
-				<a class="dropdown-toggle padding-left-no padding-right-no" data-toggle="dropdown">
-					<span class="access-hide">John Smith</span>
-					<span class="avatar avatar-sm"><img alt="alt text for John Smith avatar" src="../images/users/avatar-001.jpg"></span>
-				</a>
-				<ul class="dropdown-menu dropdown-menu-right">
-					<li>
-						<a class="padding-right-lg waves-attach" href="javascript:void(0)"><span class="icon icon-lg margin-right">account_box</span>Profile Settings</a>
-					</li>
-					<li>
-						<a class="padding-right-lg waves-attach" href="javascript:void(0)"><span class="icon icon-lg margin-right">add_to_photos</span>Upload Photo</a>
-					</li>
-					<li>
-						<a class="padding-right-lg waves-attach" href="page-login.html"><span class="icon icon-lg margin-right">exit_to_app</span>Logout</a>
-					</li>
-				</ul>
-			</li>
-		</ul>
-	</header>
-	<nav aria-hidden="true" class="menu" id="ui_menu" tabindex="-1">
+	<nav class="menu menu-left nav-drawer" id="ui_menu">
 		<div class="menu-scroll">
 			<div class="menu-content">
 				<a class="menu-logo" href="index.html">Material</a>
@@ -56,10 +26,13 @@
 								<a class="waves-attach" href="ui-button.html">Buttons</a>
 							</li>
 							<li class="active">
-								<a class="waves-attach" href="ui-button-fab.html">Buttons<small class="margin-left-xs">(Floating Action Button)</small></a>
+								<a class="waves-attach" href="ui-button-fab.html">Buttons: Floating Action Button</a>
 							</li>
 							<li>
 								<a class="waves-attach" href="ui-card.html">Cards</a>
+							</li>
+							<li>
+								<a class="waves-attach" href="ui-chip.html">Chips</a>
 							</li>
 							<li>
 								<a class="waves-attach" href="ui-data-table.html">Data Tables</a>
@@ -154,11 +127,43 @@
 			</div>
 		</div>
 	</nav>
+	<header class="header header-transparent header-waterfall ui-header">
+		<ul class="nav nav-list pull-left">
+			<li>
+				<a data-toggle="menu" href="#ui_menu">
+					<i class="icon icon-lg">menu</i>
+				</a>
+			</li>
+		</ul>
+
+		<a class="header-logo header-affix-hide" data-offset-top="213" data-spy="affix" href="index.html">Material</a>
+		<span class="header-logo header-affix" data-offset-top="213" data-spy="affix">Buttons: Floating Action Button</span>
+
+		<ul class="nav nav-list pull-right">
+			<li class="dropdown margin-right">
+				<a class="dropdown-toggle padding-left-no padding-right-no" data-toggle="dropdown">
+					<span class="access-hide">John Smith</span>
+					<span class="avatar avatar-sm"><img alt="alt text for John Smith avatar" src="../images/users/avatar-001.jpg"></span>
+				</a>
+				<ul class="dropdown-menu dropdown-menu-right">
+					<li>
+						<a class="padding-right-lg waves-attach" href="javascript:void(0)"><i class="icon icon-lg margin-right">account_box</i>Profile Settings</a>
+					</li>
+					<li>
+						<a class="padding-right-lg waves-attach" href="javascript:void(0)"><i class="icon icon-lg margin-right">add_to_photos</i>Upload Photo</a>
+					</li>
+					<li>
+						<a class="padding-right-lg waves-attach" href="page-login.html"><i class="icon icon-lg margin-right">exit_to_app</i>Logout</a>
+					</li>
+				</ul>
+			</li>
+		</ul>
+	</header>
 	<main class="content">
 		<div class="content-header ui-content-header">
 			<div class="container">
 				<div class="row">
-					<div class="col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2">
+					<div class="col-xx-12">
 						<h1 class="content-heading">Buttons: Floating Action Buttons</h1>
 					</div>
 				</div>
@@ -166,12 +171,17 @@
 		</div>
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2">
+				<div class="col-xx-12 padding-xx-no padding-xs-no">
 					<section class="content-inner margin-top-no">
 						<div class="card">
 							<div class="card-main">
 								<div class="card-inner">
-									<p>Floating action buttons are used for a promoted action. They are distinguished by a circled icon floating above the UI and have motion behaviours that include morphing, launching, and a transferring anchor point.</p>
+									<p>A floating action button represents the primary action in an application. Shaped like a circled icon floating above the UI, it changes color upon focus and lifts upon selection. When pressed, it may contain more related actions.</p>
+								</div>
+								<div class="card-action">
+									<div class="card-action-btn pull-left">
+										<a class="btn btn-flat waves-attach" href="https://material.io/guidelines/components/buttons-floating-action-button.html" target="_blank">Material Design Documentation<i class="icon margin-left-sm">open_in_new</i></a>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -179,7 +189,7 @@
 						<div class="card">
 							<div class="card-main">
 								<div class="card-inner">
-									<p class="margin-top-no"><a class="fbtn waves-attach waves-circle">F</a></p>
+									<p class="margin-top-no"><a class="fbtn waves-attach waves-circle"><i class="icon">add</i></a></p>
 <pre>
 &lt;a class="fbtn waves-attach waves-circle"&gt; ... &lt;/a&gt;
 </pre>
@@ -190,16 +200,24 @@
 							<div class="card-main">
 								<div class="card-header">
 									<div class="card-inner">
-										<h3 class="h5 margin-bottom-no margin-top-no">Brand Colours</h3>
+										<h3 class="h5 margin-bottom-no margin-top-no">Colours</h3>
 									</div>
 								</div>
 								<div class="card-inner">
 									<div class="row">
 										<div class="col-xx-6">
-											<p class="margin-top-no"><a class="fbtn fbtn-brand waves-attach waves-circle waves-light">A</a></p>
+											<p class="margin-top-no">
+												<a class="fbtn fbtn-brand waves-attach waves-circle waves-light">
+													<i class="icon">add</i>
+												</a>
+											</p>
 										</div>
 										<div class="col-xx-6">
-											<p class="margin-top-no"><a class="fbtn fbtn-brand-accent waves-attach waves-circle waves-light">B</a></p>
+											<p class="margin-top-no">
+												<a class="fbtn fbtn-brand-accent waves-attach waves-circle waves-light">
+													<i class="icon">add</i>
+												</a>
+											</p>
 										</div>
 									</div>
 <pre>
@@ -207,31 +225,6 @@
 
 &lt;a class="fbtn fbtn-brand-accent waves-attach waves-circle waves-light"&gt; ... &lt;/a&gt;
 </pre>
-								</div>
-							</div>
-						</div>
-						<div class="card">
-							<div class="card-main">
-								<div class="card-header">
-									<div class="card-inner">
-										<h3 class="h5 margin-bottom-no margin-top-no">Colour Palettes</h3>
-									</div>
-								</div>
-								<div class="card-inner">
-									<div class="row">
-										<div class="col-xx-4">
-											<p class="margin-top-no"><a class="fbtn fbtn-green waves-attach waves-circle">F</a></p>
-											<p class="margin-top-no text-center"><code>.fbtn-green</code></p>
-										</div>
-										<div class="col-xx-4">
-											<p class="margin-top-no"><a class="fbtn fbtn-orange waves-attach waves-circle">A</a></p>
-											<p class="margin-top-no text-center"><code>.fbtn-orange</code></p>
-										</div>
-										<div class="col-xx-4">
-											<p class="margin-top-no"><a class="fbtn fbtn-red waves-attach waves-circle waves-light">B</a></p>
-											<p class="margin-top-no text-center"><code>.fbtn-red</code></p>
-										</div>
-									</div>
 								</div>
 							</div>
 						</div>
@@ -260,9 +253,9 @@
 									</div>
 								</div>
 								<div class="card-inner">
-									<p class="margin-top-no"><a class="fbtn fbtn-lg waves-attach waves-circle"><span class="icon">add</span></a></p>
+									<p class="margin-top-no"><a class="fbtn fbtn-sm fbtn-brand waves-attach waves-circle waves-light"><i class="icon">add</i></a></p>
 <pre>
-&lt;a class="fbtn fbtn-lg"&gt; ... &lt;/a&gt;
+&lt;a class="fbtn fbtn-sm waves-attach waves-circle "&gt; ... &lt;/a&gt;
 </pre>
 								</div>
 							</div>
@@ -277,18 +270,26 @@
 								</div>
 								<div class="card-inner">
 									<div class="fbtn-inner">
-										<a class="fbtn fbtn-lg waves-attach waves-circle" data-toggle="dropdown"><span class="icon">add</span></a>
+										<a class="fbtn waves-attach waves-circle" data-toggle="dropdown">
+											<i class="icon">add</i>
+										</a>
 										<div class="fbtn-dropdown">
-											<a class="fbtn waves-attach waves-circle" href="javascript:void(0)"><span class="icon">more_horiz</span></a>
-											<a class="fbtn waves-attach waves-circle" href="javascript:void(0)"><span class="icon">more_horiz</span></a>
-											<a class="fbtn waves-attach waves-circle" href="javascript:void(0)"><span class="icon">more_horiz</span></a>
+											<a class="fbtn fbtn-sm waves-attach waves-circle" href="javascript:void(0)">
+												<i class="icon">more_horiz</i>
+											</a>
+											<a class="fbtn fbtn-sm waves-attach waves-circle" href="javascript:void(0)">
+												<i class="icon">more_horiz</i>
+											</a>
+											<a class="fbtn fbtn-sm waves-attach waves-circle" href="javascript:void(0)">
+												<i class="icon">more_horiz</i>
+											</a>
 										</div>
 									</div>
 <pre>
 &lt;div class="fbtn-inner"&gt;
-    &lt;a class="fbtn fbtn-lg" data-toggle="dropdown"&gt; ... &lt;/a&gt;
+    &lt;a class="fbtn" data-toggle="dropdown"&gt; ... &lt;/a&gt;
     &lt;div class="fbtn-dropdown"&gt;
-        &lt;a class="fbtn fbtn-lg"&gt; ... &lt;/a&gt;
+        &lt;a class="fbtn fbtn-sm"&gt; ... &lt;/a&gt;
         ...
     &lt;/div&gt;
 &lt;/div&gt;
@@ -305,18 +306,26 @@
 								</div>
 								<div class="card-inner">
 									<div class="fbtn-inner">
-										<a class="fbtn fbtn-lg waves-attach waves-circle" data-toggle="dropdown"><span class="icon">add</span></a>
+										<a class="fbtn waves-attach waves-circle" data-toggle="dropdown">
+											<i class="icon">add</i>
+										</a>
 										<div class="fbtn-dropup">
-											<a class="fbtn waves-attach waves-circle" href="javascript:void(0)"><span class="icon">more_horiz</span></a>
-											<a class="fbtn waves-attach waves-circle" href="javascript:void(0)"><span class="icon">more_horiz</span></a>
-											<a class="fbtn waves-attach waves-circle" href="javascript:void(0)"><span class="icon">more_horiz</span></a>
+											<a class="fbtn fbtn-sm waves-attach waves-circle" href="javascript:void(0)">
+												<i class="icon">more_horiz</i>
+											</a>
+											<a class="fbtn fbtn-sm waves-attach waves-circle" href="javascript:void(0)">
+												<i class="icon">more_horiz</i>
+											</a>
+											<a class="fbtn fbtn-sm waves-attach waves-circle" href="javascript:void(0)">
+												<i class="icon">more_horiz</i>
+											</a>
 										</div>
 									</div>
 <pre>
 &lt;div class="fbtn-inner"&gt;
-    &lt;a class="fbtn fbtn-lg" data-toggle="dropdown"&gt; ... &lt;/a&gt;
+    &lt;a class="fbtn" data-toggle="dropdown"&gt; ... &lt;/a&gt;
     &lt;div class="fbtn-dropup"&gt;
-        &lt;a class="fbtn fbtn-lg"&gt; ... &lt;/a&gt;
+        &lt;a class="fbtn fbtn-sm"&gt; ... &lt;/a&gt;
         ...
     &lt;/div&gt;
 &lt;/div&gt;
@@ -334,18 +343,27 @@
 								<div class="card-inner">
 									<p>Add meaningful animation to FAB by combining <code>.fbtn-ori</code> and <code>.fbtn-sub</code>. <code>.fbtn-ori</code> displays by default and translates to <code>.fbtn-sub</code> once the dropdown/dropup menu associated with its FAB is being made visible to the user. <code>.fbtn-sub</code> then translates back to the original <code>.fbtn-ori</code> once the associated menu starts to hide from the user.</p>
 									<div class="fbtn-inner">
-										<a class="fbtn fbtn-lg waves-attach waves-circle" data-toggle="dropdown"><span class="fbtn-ori icon">add</span><span class="fbtn-sub icon">close</span></a>
+										<a class="fbtn waves-attach waves-circle" data-toggle="dropdown">
+											<i class="fbtn-ori icon">add</i>
+											<i class="fbtn-sub icon">close</i>
+										</a>
 										<div class="fbtn-dropdown">
-											<a class="fbtn waves-attach waves-circle" href="javascript:void(0)"><span class="icon">more_horiz</span></a>
-											<a class="fbtn waves-attach waves-circle" href="javascript:void(0)"><span class="icon">more_horiz</span></a>
-											<a class="fbtn waves-attach waves-circle" href="javascript:void(0)"><span class="icon">more_horiz</span></a>
+											<a class="fbtn fbtn-sm waves-attach waves-circle" href="javascript:void(0)">
+												<i class="icon">more_horiz</i>
+											</a>
+											<a class="fbtn fbtn-sm waves-attach waves-circle" href="javascript:void(0)">
+												<i class="icon">more_horiz</i>
+											</a>
+											<a class="fbtn fbtn-sm waves-attach waves-circle" href="javascript:void(0)">
+												<i class="icon">more_horiz</i>
+											</a>
 										</div>
 									</div>
 <pre>
 &lt;div class="fbtn-inner"&gt;
-    &lt;a class="fbtn fbtn-lg" data-toggle="dropdown"&gt;
-        &lt;span class="fbtn-ori"&gt; ... &lt;/span&gt;
-        &lt;span class="fbtn-sub"&gt; ... &lt;/span&gt;
+    &lt;a class="fbtn" data-toggle="dropdown"&gt;
+        &lt;i class="icon fbtn-ori"&gt; ... &lt;/i&gt;
+        &lt;i class="icon fbtn-sub"&gt; ... &lt;/i&gt;
     &lt;/a&gt;
     &lt;div class="fbtn-dropdown"&gt;
         ...
@@ -361,10 +379,10 @@
 								<div class="card-inner">
 									<div class="row">
 										<div class="col-xx-6">
-											<a class="fbtn waves-attach waves-circle"><span class="fbtn-text">Tooltip Text (Right)</span><span class="icon">add</span></a>
+											<a class="fbtn waves-attach waves-circle"><span class="fbtn-text">Tooltip Text (Right)</span><i class="icon">add</i></a>
 										</div>
 										<div class="col-xx-6">
-											<a class="fbtn waves-attach waves-circle"><span class="fbtn-text fbtn-text-left">Tooltip Text (Left)</span><span class="icon">add</span></a>
+											<a class="fbtn waves-attach waves-circle"><span class="fbtn-text fbtn-text-left">Tooltip Text (Left)</span><i class="icon">add</i></a>
 										</div>
 									</div>
 <pre>
@@ -393,18 +411,21 @@
 	</footer>
 	<div class="fbtn-container">
 		<div class="fbtn-inner">
-			<a class="fbtn fbtn-lg fbtn-brand-accent waves-attach waves-circle waves-light" data-toggle="dropdown"><span class="fbtn-text fbtn-text-left">Links</span><span class="fbtn-ori icon">apps</span><span class="fbtn-sub icon">close</span></a>
+			<a class="fbtn fbtn-brand-accent waves-attach waves-circle waves-light" data-toggle="dropdown">
+				<i class="icon fbtn-ori">add</i>
+				<i class="icon fbtn-sub">close</i>
+			</a>
 			<div class="fbtn-dropup">
-				<a class="fbtn waves-attach waves-circle" href="https://github.com/Daemonite/material" target="_blank"><span class="fbtn-text fbtn-text-left">Fork me on GitHub</span><span class="icon">code</span></a>
-				<a class="fbtn fbtn-brand waves-attach waves-circle waves-light" href="https://twitter.com/daemonites" target="_blank"><span class="fbtn-text fbtn-text-left">Follow Daemon on Twitter</span><span class="icon">share</span></a>
-				<a class="fbtn fbtn-green waves-attach waves-circle" href="http://www.daemon.com.au/" target="_blank"><span class="fbtn-text fbtn-text-left">Visit Daemon Website</span><span class="icon">link</span></a>
+				<a class="fbtn fbtn-sm waves-attach waves-circle"><i class="icon">more_horiz</i></a>
+				<a class="fbtn fbtn-sm waves-attach waves-circle"><i class="icon">more_horiz</i></a>
+				<a class="fbtn fbtn-sm waves-attach waves-circle"><i class="icon">more_horiz</i></a>
 			</div>
 		</div>
 	</div>
 
 	<!-- js -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-	<script src="../js/base.min.js"></script>
-	<script src="../js/project.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.js"></script>
+	<script src="../js/base.js"></script>
+	<script src="../js/project.js"></script>
 </body>
 </html>

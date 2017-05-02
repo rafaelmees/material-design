@@ -7,8 +7,7 @@
 		margin-top: 0 !important;
 		margin-bottom: 0 !important;
 		> li {
-			> a,
-			> .a {
+			> a {
 				color: inherit;
 				text-transform: uppercase;
 				&:after {
@@ -59,8 +58,7 @@
 			.tab-nav-#{$color} {
 				.nav {
 					> li {
-						> a,
-						> .a {
+						> a {
 							&:after {
 								border-bottom-color: nth($palette-list-color, $i);
 							}

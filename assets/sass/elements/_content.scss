@@ -1,21 +1,12 @@
 .content-header {
-	background-color: $offwhite-solid;
-	color: $black-text-solid;
+	background-color: $brand-color;
+	color: $brand-text;
 	overflow: hidden;
-	padding-top: $margin-sm;
-	padding-bottom: $margin-sm;
+
+	margin-bottom: (($line-height / 2 + $margin-md * 2) * -1);
+	padding-top: ($header-height + $margin-sm);
+	padding-bottom: ($line-height / 2 + $margin-md * 2);
 }
-
-// colour
-	@each $color in $palette-list-class {
-		$i: index($palette-list-class, $color);
-
-		.content-header-#{$color},
-		.page-#{$color} .content-header {
-			background-color: nth($palette-list-color, $i);
-			color: nth($palette-list-text, $i);
-		}
-	}
 
 .content-heading {
 	font-weight: $font-weight-light;

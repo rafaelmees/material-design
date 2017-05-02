@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta content="IE=edge" http-equiv="X-UA-Compatible">
 	<meta content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no, width=device-width" name="viewport">
-	<title>Dialogs - Material</title>
+	<title>Chips - Material</title>
 
 	<!-- css -->
 	<link href="../css/base.css" rel="stylesheet">
@@ -31,13 +31,13 @@
 							<li>
 								<a class="waves-attach" href="ui-card.html">Cards</a>
 							</li>
-							<li>
+							<li class="active">
 								<a class="waves-attach" href="ui-chip.html">Chips</a>
 							</li>
 							<li>
 								<a class="waves-attach" href="ui-data-table.html">Data Tables</a>
 							</li>
-							<li class="active">
+							<li>
 								<a class="waves-attach" href="ui-dialog.html">Dialogs</a>
 							</li>
 							<li>
@@ -137,7 +137,7 @@
 		</ul>
 
 		<a class="header-logo header-affix-hide" data-offset-top="213" data-spy="affix" href="index.html">Material</a>
-		<span class="header-logo header-affix" data-offset-top="213" data-spy="affix">Dialogs</span>
+		<span class="header-logo header-affix" data-offset-top="213" data-spy="affix">Chips</span>
 
 		<ul class="nav nav-list pull-right">
 			<li class="dropdown margin-right">
@@ -164,7 +164,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-xx-12">
-						<h1 class="content-heading">Dialogs</h1>
+						<h1 class="content-heading">Chips</h1>
 					</div>
 				</div>
 			</div>
@@ -176,42 +176,44 @@
 						<div class="card">
 							<div class="card-main">
 								<div class="card-inner">
-									<p>Dialogs contain text and UI controls focused on a specific task. They inform users about critical information, require users to make decisions, or involve multiple tasks.</p>
-								</div>
-							</div>
-						</div>
-						<h2 class="content-sub-heading">Examples</h2>
-						<div class="card">
-							<div class="card-main">
-								<div class="card-inner">
-									<p>Toggle dialogs by clicking the links below.</p>
+									<p>Chips represent complex entities in small blocks, such as a contact.</p>
 								</div>
 								<div class="card-action">
 									<div class="card-action-btn pull-left">
-										<a class="btn btn-flat btn-brand-accent waves-attach" data-backdrop="static" data-toggle="modal" href="#ui_dialog_example_alert">Alert</a>
-										<a class="btn btn-flat btn-brand-accent waves-attach" data-backdrop="static" data-toggle="modal" href="#ui_dialog_example_alert_alt">Alert w/ Title</a>
-										<a class="btn btn-flat btn-brand-accent waves-attach" data-toggle="modal" href="#ui_dialog_example_simple">Simple Dialog</a>
+										<a class="btn btn-flat waves-attach" href="https://material.io/guidelines/components/chips.html" target="_blank">Material Design Documentation<span class="icon margin-left-sm">open_in_new</span></a>
 									</div>
 								</div>
 							</div>
 						</div>
+						<div class="card">
+							<div class="card-main">
+								<div class="card-inner">
+									<span class="chip">Chips</span>
 <pre>
-&lt;div aria-hidden="true" class="modal modal-va-middle fade" id="" role="dialog" tabindex="-1"&gt;
-    &lt;div class="modal-dialog modal-xs"&gt;
-        &lt;div class="modal-content"&gt;
-            &lt;div class="modal-heading"&gt; ... &lt;/div&gt;
-            &lt;div class="modal-inner"&gt; ... &lt;/div&gt;
-            &lt;div class="modal-footer"&gt; ... &lt;/div&gt;
-        &lt;/div&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
+&lt;span class="chip"&gt; ... &lt;/span&gt;
 </pre>
-						<div class="media margin-bottom margin-top">
-							<div class="media-object margin-right-sm pull-left">
-								<span class="icon icon-lg text-brand-accent">info_outline</span>
-							</div>
-							<div class="media-inner">
-								<span>Dialogs are a sub-type of modals, and the examples covered here are for standard material system dialogs. Other modal constructions are covered in <a href="ui-modal.html">the modal page</a>.</span>
+									<h3 class="h5">Avatar</h3>
+									<span class="chip">
+										<span class="avatar avatar-brand">
+											A
+										</span>
+										Chips
+									 </span>
+<pre>
+&lt;span class="chip"&gt;
+    &lt;span class="avatar"&gt; ... &lt;/span&gt;
+    ...
+&lt;/span&gt;
+</pre>
+									<h3 class="h5">Deletable</h3>
+									<span class="chip">Chips<i class="icon close">cancel</i></span>
+<pre>
+&lt;span class="chip"&gt;
+    ...
+    &lt;i class="icon close"&gt;cancel&lt;/i&gt;
+&lt;/span&gt;
+</pre>
+								</div>
 							</div>
 						</div>
 					</section>
@@ -224,68 +226,6 @@
 			<p>Material</p>
 		</div>
 	</footer>
-	<div aria-hidden="true" class="modal modal-va-middle fade" id="ui_dialog_example_alert" role="dialog" tabindex="-1">
-		<div class="modal-dialog modal-xs">
-			<div class="modal-content">
-				<div class="modal-inner">
-					<p class="h5 margin-top-sm text-black-hint">Discard draft?</p>
-				</div>
-				<div class="modal-footer">
-					<p class="text-right"><a class="btn btn-flat btn-brand-accent waves-attach" data-dismiss="modal">Cancel</a><a class="btn btn-flat btn-brand-accent waves-attach" data-dismiss="modal">Discard</a></p>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div aria-hidden="true" class="modal modal-va-middle fade" id="ui_dialog_example_alert_alt" role="dialog" tabindex="-1">
-		<div class="modal-dialog modal-xs">
-			<div class="modal-content">
-				<div class="modal-heading">
-					<p class="modal-title">Use location service?</p>
-				</div>
-				<div class="modal-inner">
-					<p class="h5 margin-top-sm text-black-hint">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-				</div>
-				<div class="modal-footer">
-					<p class="text-right"><a class="btn btn-flat btn-brand-accent waves-attach" data-dismiss="modal">Disagree</a><a class="btn btn-flat btn-brand-accent waves-attach" data-dismiss="modal">Agree</a></p>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div aria-hidden="true" class="modal modal-va-middle fade" id="ui_dialog_example_simple" role="dialog" tabindex="-1">
-		<div class="modal-dialog modal-xs">
-			<div class="modal-content">
-				<div class="modal-heading">
-					<h2 class="modal-title">Set backup account</h2>
-				</div>
-				<ul class="nav">
-					<li>
-						<a class="margin-bottom-sm waves-attach" data-dismiss="modal" href="javascript:void(0)">
-							<div class="avatar avatar-inline margin-left-sm margin-right-sm">
-								<img alt="alt text for username avatar" src="../images/users/avatar-001.jpg">
-							</div>
-							<span class="margin-right-sm text-black">username</span>
-						</a>
-					</li>
-					<li>
-						<a class="margin-bottom-sm waves-attach" data-dismiss="modal" href="javascript:void(0)">
-							<div class="avatar avatar-inline margin-left-sm margin-right-sm">
-								<img alt="alt text for another_account avatar" src="../images/users/avatar-001.jpg">
-							</div>
-							<span class="margin-right-sm text-black">another_account</span>
-						</a>
-					</li>
-					<li>
-						<a class="margin-bottom-sm waves-attach" data-dismiss="modal" href="javascript:void(0)">
-							<div class="avatar avatar-inline margin-left-sm margin-right-sm">
-								<span class="icon icon-lg text-black">add</span>
-							</div>
-							<span class="margin-right-sm text-black">add account</span>
-						</a>
-					</li>
-				</ul>
-			</div>
-		</div>
-	</div>
 
 	<!-- js -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.js"></script>
