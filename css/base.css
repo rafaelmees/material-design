@@ -2942,6 +2942,10 @@ html.no-touchevents .fbtn:hover > .fbtn-text {
   font-size: 1.4em;
   vertical-align: -20%;
 }
+.chip.deletable:hover {
+  background-color: #727272;
+  color: #ffffff;
+}
 
 code,
 kbd,

@@ -23,4 +23,9 @@
 		font-size: 1.4em;
 		vertical-align: -20%;
 	}
+
+	&.deletable:hover {
+		background-color: $black-sec-solid;
+		color: $white-text-solid;
+	}
 }
