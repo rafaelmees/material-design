@@ -12,6 +12,9 @@
 		top: (($line-height - $font-size) / 2 - 1);
 		left: 0;
 	width: $font-size;
+	.form-group & {
+		top: ($font-size-h6 - 2);
+	}
 }
 
 [class*="radiobtn-circle"] {

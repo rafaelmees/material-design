@@ -1,9 +1,57 @@
 /*!
- * textarea autosize v0.4.0
- * https://github.com/javierjulio/textarea-autosize
+ * jQuery Textarea AutoSize plugin
+ * Author: Javier Julio
+ * Licensed under the MIT license
  */
+;(function ($, window, document, undefined) {
 
-!function(t,e){function i(e){this.element=e,this.$element=t(e),this.init()}var n="textareaAutoSize",h="plugin_"+n,s=function(t){return t.replace(/\s/g,"").length>0};i.prototype={init:function(){var i=(this.$element.outerHeight(),parseInt(this.$element.css("paddingBottom"))+parseInt(this.$element.css("paddingTop")));s(this.element.value)&&this.$element.height(this.element.scrollHeight-i),this.$element.on("input keyup",function(){var n=t(e),h=n.scrollTop();t(this).height(0).height(this.scrollHeight-i),n.scrollTop(h)})}},t.fn[n]=function(e){return this.each(function(){t.data(this,h)||t.data(this,h,new i(this,e))}),this}}(jQuery,window,document);
+  var pluginName = "textareaAutoSize";
+  var pluginDataName = "plugin_" + pluginName;
+
+  var containsText = function (value) {
+    return (value.replace(/\s/g, '').length > 0);
+  };
+
+  function Plugin(element, options) {
+    this.element = element;
+    this.$element = $(element);
+    this.init();
+  }
+
+  Plugin.prototype = {
+    init: function() {
+      var height = this.$element.outerHeight();
+      var diff = parseInt(this.$element.css('paddingBottom')) +
+                 parseInt(this.$element.css('paddingTop')) || 0;
+
+      if (containsText(this.element.value)) {
+        this.$element.height(this.element.scrollHeight - diff);
+      }
+
+      // keyup is required for IE to properly reset height when deleting text
+      this.$element.on('input keyup', function(event) {
+        var $window = $(window);
+        var currentScrollPosition = $window.scrollTop();
+
+        $(this)
+          .height(0)
+          .height((this.scrollHeight - diff) + 1);
+
+        $window.scrollTop(currentScrollPosition);
+      });
+    }
+  };
+
+  $.fn[pluginName] = function (options) {
+    this.each(function() {
+      if (!$.data(this, pluginDataName)) {
+        $.data(this, pluginDataName, new Plugin(this, options));
+      }
+    });
+    return this;
+  };
+
+})(jQuery, window, document);
 
 // textarea autosize default
 	$(function () {

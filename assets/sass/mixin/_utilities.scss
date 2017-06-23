@@ -34,3 +34,16 @@
 	text-overflow: ellipsis;
 	white-space: nowrap;
 }
+
+@mixin placeholder($color) {
+	&:-ms-input-placeholder {
+		color: $color;
+	}
+	&::-moz-placeholder {
+		color: $color;
+		opacity: 1;
+	}
+	&::-webkit-input-placeholder {
+		color: $color;
+	}
+}

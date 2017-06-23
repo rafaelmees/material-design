@@ -67,8 +67,11 @@
 	.checkbox.switch &,
 	.radiobtn.switch & {
 		position: absolute;
-			top: (($line-height - $font-size-h6) / 2);
-			left: 0;
+		top: (($line-height - $font-size-h6) / 2);
+		left: 0;
+		.form-group & {
+			top: $font-size-h6;
+		}
 	}
 }
 

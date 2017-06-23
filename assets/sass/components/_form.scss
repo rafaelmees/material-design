@@ -3,7 +3,7 @@
 	display: block;
 	position: relative;
 	.form-group & {
-		margin-top: (($input-height - $line-height) / 2);
+		padding-top: (($input-height - $line-height) / 2);
 		padding-bottom: (($input-height - $line-height) / 2);
 	}
 	label {
@@ -51,14 +51,12 @@
 	line-height: $line-height;
 	padding: (($input-height - $line-height) / 2) 0 (($input-height - $line-height) / 2 - 1);
 	width: 100%;
+	@include placeholder($black-hint);
 	&:focus {
 		border-color: $link-color;
 		border-bottom-width: 2px;
 		outline: 0;
 		padding-bottom: (($input-height - $line-height) / 2 - 2);
-	}
-	&::placeholder {
-		color: $black-hint;
 	}
 	&[disabled],
 	&[readonly],
@@ -68,14 +66,10 @@
 		cursor: not-allowed;
 		opacity: 1;
 	}
-	&.form-control-inline {
-		display: inline-block;
-		vertical-align: middle;
-		width: auto;
-	}
-	&.form-control-default {
+	.form-default & {
 		border: 1px solid $black-divider;
 		padding: (($input-height - $line-height) / 2 - 1) ($grid-gutter / 2);
+		background-color: $white;
 		&:focus {
 			border: 1px solid $link-color;
 			padding: (($input-height - $line-height) / 2 - 1) ($grid-gutter / 2);
@@ -85,6 +79,14 @@
 		fieldset[disabled] & {
 			background-color: $offwhite;
 		}
+	}
+	&::-webkit-input-placeholder {
+		font-size: $font-size;
+		font-weight: 500;
+		color: $black-hint;
+	}
+	&:focus::-webkit-input-placeholder {
+		opacity: 0;
 	}
 }
 
@@ -151,22 +153,20 @@ textarea.form-control {
 	}
 }
 
-.form-group {
-	margin-top: $margin-md;
-	margin-bottom: $margin-md;
-	legend + & {
-		margin-top: 0;
-	}
-}
-
 .form-help {
 	display: block;
 	font-size: $font-size-h6;
 	font-weight: $font-weight-normal;
 	line-height: $line-height;
-	margin-top: $margin-base;
-	margin-bottom: $margin-sm;
+	height: $line-height;
+	margin-top: $margin-xs;
 	position: relative;
+	width: 100%;
+	color: $black-hint;
+	
+	& .errors {
+		color: red;
+	}
 }
 
 .form-help-icon {

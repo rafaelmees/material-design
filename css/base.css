@@ -3100,7 +3100,7 @@ pre code {
 }
 .form-group .checkbox, .form-group
 .radiobtn {
-  margin-top: 8px;
+  padding-top: 8px;
   padding-bottom: 8px;
 }
 .checkbox label,
@@ -3149,16 +3149,25 @@ pre code {
   padding: 8px 0 7px;
   width: 100%;
 }
+.form-control:-ms-input-placeholder, .picker__select--month:-ms-input-placeholder,
+.picker__select--year:-ms-input-placeholder {
+  color: rgba(0, 0, 0, 0.38);
+}
+.form-control::-moz-placeholder, .picker__select--month::-moz-placeholder,
+.picker__select--year::-moz-placeholder {
+  color: rgba(0, 0, 0, 0.38);
+  opacity: 1;
+}
+.form-control::-webkit-input-placeholder, .picker__select--month::-webkit-input-placeholder,
+.picker__select--year::-webkit-input-placeholder {
+  color: rgba(0, 0, 0, 0.38);
+}
 .form-control:focus, .picker__select--month:focus,
 .picker__select--year:focus {
   border-color: #ff4081;
   border-bottom-width: 2px;
   outline: 0;
   padding-bottom: 6px;
-}
-.form-control::placeholder, .picker__select--month::placeholder,
-.picker__select--year::placeholder {
-  color: rgba(0, 0, 0, 0.38);
 }
 .form-control[disabled], [disabled].picker__select--month,
 [disabled].picker__select--year, .form-control[readonly], [readonly].picker__select--month,
@@ -3169,27 +3178,32 @@ fieldset[disabled] .picker__select--year {
   cursor: not-allowed;
   opacity: 1;
 }
-.form-control.form-control-inline, .form-control-inline.picker__select--month,
-.form-control-inline.picker__select--year {
-  display: inline-block;
-  vertical-align: middle;
-  width: auto;
-}
-.form-control.form-control-default, .form-control-default.picker__select--month,
-.form-control-default.picker__select--year {
+.form-default .form-control, .form-default .picker__select--month,
+.form-default .picker__select--year {
   border: 1px solid rgba(0, 0, 0, 0.12);
   padding: 7px 8px;
+  background-color: #ffffff;
 }
-.form-control.form-control-default:focus, .form-control-default.picker__select--month:focus,
-.form-control-default.picker__select--year:focus {
+.form-default .form-control:focus, .form-default .picker__select--month:focus,
+.form-default .picker__select--year:focus {
   border: 1px solid #ff4081;
   padding: 7px 8px;
 }
-.form-control.form-control-default[disabled], .form-control-default[disabled].picker__select--month,
-.form-control-default[disabled].picker__select--year, .form-control.form-control-default[readonly], .form-control-default[readonly].picker__select--month,
-.form-control-default[readonly].picker__select--year, fieldset[disabled] .form-control.form-control-default, fieldset[disabled] .form-control-default.picker__select--month,
-fieldset[disabled] .form-control-default.picker__select--year {
+.form-default .form-control[disabled], .form-default [disabled].picker__select--month,
+.form-default [disabled].picker__select--year, .form-default .form-control[readonly], .form-default [readonly].picker__select--month,
+.form-default [readonly].picker__select--year, fieldset[disabled] .form-default .form-control, fieldset[disabled] .form-default .picker__select--month,
+fieldset[disabled] .form-default .picker__select--year {
   background-color: rgba(154, 154, 154, 0.18);
+}
+.form-control::-webkit-input-placeholder, .picker__select--month::-webkit-input-placeholder,
+.picker__select--year::-webkit-input-placeholder {
+  font-size: 14px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.38);
+}
+.form-control:focus::-webkit-input-placeholder, .picker__select--month:focus::-webkit-input-placeholder,
+.picker__select--year:focus::-webkit-input-placeholder {
+  opacity: 0;
 }
 
 .form-group-brand .form-control, .form-group-brand .picker__select--month,
@@ -3288,22 +3302,19 @@ textarea.picker__select--year {
   padding-top: 7px;
 }
 
-.form-group {
-  margin-top: 24px;
-  margin-bottom: 24px;
-}
-legend + .form-group {
-  margin-top: 0;
-}
-
 .form-help {
   display: block;
   font-size: 12px;
   font-weight: 400;
   line-height: 20px;
-  margin-top: 8px;
-  margin-bottom: 12px;
+  height: 20px;
+  margin-top: 4px;
   position: relative;
+  width: 100%;
+  color: rgba(0, 0, 0, 0.38);
+}
+.form-help .errors {
+  color: red;
 }
 
 .form-help-icon {
@@ -3382,6 +3393,10 @@ legend + .form-group {
   top: 2px;
   left: 0;
   width: 14px;
+}
+.form-group [class*="checkbox-circle"], .form-group
+[class*="radiobtn-circle"] {
+  top: 10px;
 }
 
 [class*="radiobtn-circle"] {
@@ -3506,21 +3521,17 @@ fieldset[disabled] input[type="checkbox"]:checked ~ .checkbox-circle-icon, input
 .floating-label {
   color: rgba(0, 0, 0, 0.38);
   cursor: text;
-  display: block;
   font-size: 14px;
   line-height: 1;
   margin: 0;
-  overflow: hidden;
   padding: 0;
   position: absolute;
   top: 11px;
   left: 0;
-  text-overflow: ellipsis;
   transform-origin: 0 0;
   transition-duration: 0.3s;
   transition-property: color, transform;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  white-space: nowrap;
 }
 .form-group-label [class*="col-"] .floating-label {
   left: 16px;
@@ -3533,18 +3544,13 @@ fieldset[disabled] input[type="checkbox"]:checked ~ .checkbox-circle-icon, input
 }
 
 .form-group-label {
-  margin-top: 36px;
-  margin-bottom: 36px;
+  margin-top: 20px;
   position: relative;
 }
 .form-group-label .form-control, .form-group-label .picker__select--month,
 .form-group-label .picker__select--year {
   position: relative;
   z-index: 1;
-}
-.form-group-label .form-control::placeholder, .form-group-label .picker__select--month::placeholder,
-.form-group-label .picker__select--year::placeholder {
-  color: transparent;
 }
 legend + .form-group-label {
   margin-top: 12px;
@@ -3577,6 +3583,12 @@ legend + .form-group-label {
   line-height: 28px;
   padding: 4px 0;
   transition: color 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-group label.required:AFTER {
+  content: " *";
+  font-size: 12px;
+  vertical-align: top;
 }
 
 .switch {
@@ -3641,6 +3653,9 @@ input[type="checkbox"]:checked + .switch-toggle:active:after, input[type="radio"
   position: absolute;
   top: 4px;
   left: 0;
+}
+.form-group .checkbox.switch .switch-toggle, .form-group .radiobtn.switch .switch-toggle {
+  top: 12px;
 }
 
 input[type="checkbox"]:checked + .switch-toggle-brand, input[type="radio"]:checked + .switch-toggle-brand {
