@@ -51,7 +51,9 @@
 	line-height: $line-height;
 	padding: (($input-height - $line-height) / 2) 0 (($input-height - $line-height) / 2 - 1);
 	width: 100%;
-	@include placeholder($black-hint);
+	transition-duration: 0.2s;
+	transition-property: border, padding;
+	transition-timing-function: $timing;
 	&:focus {
 		border-color: $link-color;
 		border-bottom-width: 2px;
@@ -63,44 +65,21 @@
 	fieldset[disabled] & {
 		border-style: dashed;
 		color: $black-hint;
-		cursor: not-allowed;
 		opacity: 1;
-	}
-	.form-default & {
-		border: 1px solid $black-divider;
-		padding: (($input-height - $line-height) / 2 - 1) ($grid-gutter / 2);
-		background-color: $white;
-		&:focus {
-			border: 1px solid $link-color;
-			padding: (($input-height - $line-height) / 2 - 1) ($grid-gutter / 2);
-		}
-		&[disabled],
-		&[readonly],
-		fieldset[disabled] & {
-			background-color: $offwhite;
-		}
 	}
 	&::-webkit-input-placeholder {
 		font-size: $font-size;
 		font-weight: 500;
 		color: $black-hint;
+		opacity: 0;
+		transition-duration: 0.2s;
+		transition-property: opacity;
+		transition-timing-function: $timing;
 	}
 	&:focus::-webkit-input-placeholder {
-		opacity: 0;
+		opacity: 1;
 	}
 }
-
-// colour
-	@each $color in $palette-list-class {
-		$i: index($palette-list-class, $color);
-
-		.form-group-#{$color} {
-			.form-control,
-			.form-control:focus {
-				border-color: nth($palette-list-color, $i);
-			}
-		}
-	}
 
 input[type="color"].form-control-default {
 	min-width: ($grid-gutter + $line-height + 2);
@@ -206,12 +185,3 @@ textarea.form-control {
 			}
 		}
 }
-
-// colour
-	@each $color in $palette-list-class {
-		$i: index($palette-list-class, $color);
-
-		.form-group-#{$color} .form-label {
-			color: nth($palette-list-color, $i);
-		}
-	}

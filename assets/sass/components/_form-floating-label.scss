@@ -9,7 +9,7 @@
 		top: (($input-height - $font-size) / 2);
 		left: 0;
 	transform-origin: 0 0;
-	transition-duration: 0.3s;
+	transition-duration: 0.2s;
 	transition-property: color, transform;
 	transition-timing-function: $timing;
 	.form-group-label [class*="col-"] & {

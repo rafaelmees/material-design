@@ -3148,19 +3148,9 @@ pre code {
   line-height: 20px;
   padding: 8px 0 7px;
   width: 100%;
-}
-.form-control:-ms-input-placeholder, .picker__select--month:-ms-input-placeholder,
-.picker__select--year:-ms-input-placeholder {
-  color: rgba(0, 0, 0, 0.38);
-}
-.form-control::-moz-placeholder, .picker__select--month::-moz-placeholder,
-.picker__select--year::-moz-placeholder {
-  color: rgba(0, 0, 0, 0.38);
-  opacity: 1;
-}
-.form-control::-webkit-input-placeholder, .picker__select--month::-webkit-input-placeholder,
-.picker__select--year::-webkit-input-placeholder {
-  color: rgba(0, 0, 0, 0.38);
+  transition-duration: 0.2s;
+  transition-property: border, padding;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .form-control:focus, .picker__select--month:focus,
 .picker__select--year:focus {
@@ -3168,6 +3158,7 @@ pre code {
   border-bottom-width: 2px;
   outline: 0;
   padding-bottom: 6px;
+  cursor: inherit;
 }
 .form-control[disabled], [disabled].picker__select--month,
 [disabled].picker__select--year, .form-control[readonly], [readonly].picker__select--month,
@@ -3175,75 +3166,21 @@ pre code {
 fieldset[disabled] .picker__select--year {
   border-style: dashed;
   color: rgba(0, 0, 0, 0.38);
-  cursor: not-allowed;
   opacity: 1;
-}
-.form-default .form-control, .form-default .picker__select--month,
-.form-default .picker__select--year {
-  border: 1px solid rgba(0, 0, 0, 0.12);
-  padding: 7px 8px;
-  background-color: #ffffff;
-}
-.form-default .form-control:focus, .form-default .picker__select--month:focus,
-.form-default .picker__select--year:focus {
-  border: 1px solid #ff4081;
-  padding: 7px 8px;
-}
-.form-default .form-control[disabled], .form-default [disabled].picker__select--month,
-.form-default [disabled].picker__select--year, .form-default .form-control[readonly], .form-default [readonly].picker__select--month,
-.form-default [readonly].picker__select--year, fieldset[disabled] .form-default .form-control, fieldset[disabled] .form-default .picker__select--month,
-fieldset[disabled] .form-default .picker__select--year {
-  background-color: rgba(154, 154, 154, 0.18);
 }
 .form-control::-webkit-input-placeholder, .picker__select--month::-webkit-input-placeholder,
 .picker__select--year::-webkit-input-placeholder {
   font-size: 14px;
   font-weight: 500;
   color: rgba(0, 0, 0, 0.38);
+  opacity: 0;
+  transition-duration: 0.2s;
+  transition-property: opacity;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .form-control:focus::-webkit-input-placeholder, .picker__select--month:focus::-webkit-input-placeholder,
 .picker__select--year:focus::-webkit-input-placeholder {
-  opacity: 0;
-}
-
-.form-group-brand .form-control, .form-group-brand .picker__select--month,
-.form-group-brand .picker__select--year,
-.form-group-brand .form-control:focus,
-.form-group-brand .picker__select--month:focus,
-.form-group-brand .picker__select--year:focus {
-  border-color: #3f51b5;
-}
-
-.form-group-brand-accent .form-control, .form-group-brand-accent .picker__select--month,
-.form-group-brand-accent .picker__select--year,
-.form-group-brand-accent .form-control:focus,
-.form-group-brand-accent .picker__select--month:focus,
-.form-group-brand-accent .picker__select--year:focus {
-  border-color: #ff4081;
-}
-
-.form-group-green .form-control, .form-group-green .picker__select--month,
-.form-group-green .picker__select--year,
-.form-group-green .form-control:focus,
-.form-group-green .picker__select--month:focus,
-.form-group-green .picker__select--year:focus {
-  border-color: #4caf50;
-}
-
-.form-group-orange .form-control, .form-group-orange .picker__select--month,
-.form-group-orange .picker__select--year,
-.form-group-orange .form-control:focus,
-.form-group-orange .picker__select--month:focus,
-.form-group-orange .picker__select--year:focus {
-  border-color: #ff9800;
-}
-
-.form-group-red .form-control, .form-group-red .picker__select--month,
-.form-group-red .picker__select--year,
-.form-group-red .form-control:focus,
-.form-group-red .picker__select--month:focus,
-.form-group-red .picker__select--year:focus {
-  border-color: #f44336;
+  opacity: 1;
 }
 
 input[type="color"].form-control-default {
@@ -3529,7 +3466,7 @@ fieldset[disabled] input[type="checkbox"]:checked ~ .checkbox-circle-icon, input
   top: 11px;
   left: 0;
   transform-origin: 0 0;
-  transition-duration: 0.3s;
+  transition-duration: 0.2s;
   transition-property: color, transform;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }

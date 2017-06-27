@@ -176,7 +176,12 @@
 						<div class="card">
 							<div class="card-main">
 								<div class="card-inner">
-									<p>Text fields allow the user to input and select text. The examples form below demonstrate customized form elements for a more consistent rendering across browsers and devices.</p>
+									<p>Text fields allow users to input, edit, and select text. Text fields typically reside in forms but can appear in other places, like dialog boxes and search.</p>
+								</div>
+								<div class="card-action">
+									<div class="card-action-btn pull-left">
+										<a class="btn btn-flat waves-attach" href="https://material.io/guidelines/components/text-fields.html" target="_blank">Material Design Documentation<span class="icon margin-left-sm">open_in_new</span></a>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -187,16 +192,14 @@
 								<div class="card">
 									<div class="card-main">
 										<div class="card-inner">
-											<div class="form-group form-group-label">
-												<label class="floating-label required" for="ui_floating_label_example">Input</label>
-												<input type="text" id="ui_floating_label_example" class="form-control">
-												<div class="form-help"></div>
-											</div>
-											<div class="form-group form-group-label">
-												<label class="floating-label required" for="ui_floating_label_example_value">Input</label>
-												<input type="text" id="ui_floating_label_example_value" class="form-control" value="something has already been written down">
-												<div class="form-help"></div>
-											</div>
+<div class="form-group form-group-label">
+	<label class="floating-label" for="ui_floating_label_example">Input</label>
+	<input type="text" id="ui_floating_label_example" class="form-control">
+</div>
+<div class="form-group form-group-label">
+	<label class="floating-label" for="ui_floating_label_example_value">Input</label>
+	<input type="text" id="ui_floating_label_example_value" class="form-control" value="something has already been written down">
+</div>
 <pre>
 &lt;div class="form-group form-group-label"&gt;
     &lt;label class="floating-label" for="..."&gt; ... &lt;/label&gt;
@@ -262,55 +265,29 @@
 								<div class="card">
 									<div class="card-main">
 										<div class="card-inner">
-											<div class="form-group form-group-label">
-												<label class="floating-label" for="ui_floating_label_example_disabled">Disabled Input</label>
-												<input class="form-control" id="ui_floating_label_example_disabled" type="text" disabled>
-												<div class="form-help">
-													<code>disabled</code>
-												</div>
-											</div>
-											<div class="form-group form-group-label">
-												<label class="floating-label" for="ui_floating_label_example_disabled_value">Disabled Input with Value</label>
-												<input class="form-control" id="ui_floating_label_example_disabled_value" type="text" value="something has already been written down" disabled>
-												<div class="form-help">
-													<code>disabled</code>
-												</div>
-											</div>
-											<div class="form-group form-group-label form-group-brand">
-												<label class="floating-label" for="ui_floating_label_example_brand">Brand Input</label>
-												<input class="form-control" id="ui_floating_label_example_brand" type="text">
-												<div class="form-help">
-													<code>.form-group-brand</code>
-												</div>
-											</div>
-											<div class="form-group form-group-label form-group-brand-accent">
-												<label class="floating-label" for="ui_floating_label_example_brand_accent">Brand Accent Input</label>
-												<input class="form-control" id="ui_floating_label_example_brand_accent" type="text">
-												<div class="form-help">
-													<code>.form-group-brand-accent</code>
-												</div>
-											</div>
-											<div class="form-group form-group-label form-group-green">
-												<label class="floating-label" for="ui_floating_label_example_green">Green Input</label>
-												<input class="form-control" id="ui_floating_label_example_green" type="text">
-												<div class="form-help">
-													<code>.form-group-green</code>
-												</div>
-											</div>
-											<div class="form-group form-group-label form-group-orange">
-												<label class="floating-label" for="ui_floating_label_example_orange">Orange Input</label>
-												<input class="form-control" id="ui_floating_label_example_orange" type="text">
-												<div class="form-help">
-													<code>.form-group-orange</code>
-												</div>
-											</div>
-											<div class="form-group form-group-label form-group-red">
-												<label class="floating-label" for="ui_floating_label_example_red">Red Input</label>
-												<input class="form-control" id="ui_floating_label_example_red" type="text">
-												<div class="form-help">
-													<code>.form-group-red</code>
-												</div>
-											</div>
+<div class="form-group form-group-label">
+	<label class="floating-label" for="ui_floating_label_example_disabled">Disabled Input</label>
+	<input class="form-control" id="ui_floating_label_example_disabled" type="text" disabled>
+	<div class="form-help">
+		<code>disabled</code>
+	</div>
+</div>
+<fieldset disabled>
+	<div class="form-group form-group-label">
+		<label class="floating-label" for="ui_floating_label_example_disabled">Disabled Input</label>
+		<input class="form-control" id="ui_floating_label_example_disabled" type="text" value="Teste teste">
+		<div class="form-help">
+			<code>disabled</code>
+		</div>
+	</div>
+</fieldset>
+<div class="form-group form-group-label">
+	<label class="floating-label" for="ui_floating_label_example_readonly">Readonly Input</label>
+	<input class="form-control" id="ui_floating_label_example_readonly" type="text" value="Readonly" readonly>
+	<div class="form-help">
+		<code>readonly</code>
+	</div>
+</div>
 										</div>
 									</div>
 								</div>
