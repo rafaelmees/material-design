@@ -81,10 +81,6 @@
 	}
 }
 
-input[type="color"].form-control-default {
-	min-width: ($grid-gutter + $line-height + 2);
-}
-
 select.form-control {
 	-webkit-appearance: none;
 	   -moz-appearance: none;
@@ -102,34 +98,8 @@ select.form-control {
 	}
 }
 
-select.form-control-default {
-	@include responsive("(-webkit-min-device-pixel-ratio: 0), (min--moz-device-pixel-ratio: 0)") {
-		background-position: calc(100% - #{$grid-gutter / 2}) (($input-height - 12) / 2 - 1);
-		padding-right: ($grid-gutter + 12) !important;
-		&[multiple],
-		&[size] {
-			padding-right: ($grid-gutter / 2) !important;
-		}
-	}
-}
-
 textarea.form-control {
 	height: auto;
-}
-
-.form-control-static {
-	border-bottom: 1px solid $black-divider;
-	display: block;
-	font-size: $font-size;
-	font-weight: $font-weight-normal;
-	line-height: $line-height;
-	margin-top: 0;
-	margin-bottom: 0;
-	padding-top: (($input-height - $line-height) / 2);
-	padding-bottom: (($input-height - $line-height) / 2 - 1);
-	&.form-control-default {
-		padding-top: (($input-height - $line-height) / 2 - 1);
-	}
 }
 
 .form-help {
@@ -142,9 +112,11 @@ textarea.form-control {
 	position: relative;
 	width: 100%;
 	color: $black-hint;
-	
-	& .errors {
+	.error-message {
 		color: red;
+	}
+	.character-counter {
+		float: right;
 	}
 }
 

@@ -3158,7 +3158,6 @@ pre code {
   border-bottom-width: 2px;
   outline: 0;
   padding-bottom: 6px;
-  cursor: inherit;
 }
 .form-control[disabled], [disabled].picker__select--month,
 [disabled].picker__select--year, .form-control[readonly], [readonly].picker__select--month,
@@ -3183,10 +3182,6 @@ fieldset[disabled] .picker__select--year {
   opacity: 1;
 }
 
-input[type="color"].form-control-default {
-  min-width: 38px;
-}
-
 select.form-control, select.picker__select--month,
 select.picker__select--year {
   -webkit-appearance: none;
@@ -3209,34 +3204,9 @@ select.picker__select--year {
   }
 }
 
-@media only screen and (-webkit-min-device-pixel-ratio: 0), (min--moz-device-pixel-ratio: 0) {
-  select.form-control-default {
-    background-position: calc(100% - 8px) 11px;
-    padding-right: 28px !important;
-  }
-  select.form-control-default[multiple], select.form-control-default[size] {
-    padding-right: 8px !important;
-  }
-}
-
 textarea.form-control, textarea.picker__select--month,
 textarea.picker__select--year {
   height: auto;
-}
-
-.form-control-static {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
-  display: block;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 20px;
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-top: 8px;
-  padding-bottom: 7px;
-}
-.form-control-static.form-control-default {
-  padding-top: 7px;
 }
 
 .form-help {
@@ -3250,8 +3220,11 @@ textarea.picker__select--year {
   width: 100%;
   color: rgba(0, 0, 0, 0.38);
 }
-.form-help .errors {
+.form-help .error-message {
   color: red;
+}
+.form-help .character-counter {
+  float: right;
 }
 
 .form-help-icon {
@@ -3294,26 +3267,6 @@ textarea.picker__select--year {
     padding-bottom: 8px;
     text-align: right;
   }
-}
-
-.form-group-brand .form-label {
-  color: #3f51b5;
-}
-
-.form-group-brand-accent .form-label {
-  color: #ff4081;
-}
-
-.form-group-green .form-label {
-  color: #4caf50;
-}
-
-.form-group-orange .form-label {
-  color: #ff9800;
-}
-
-.form-group-red .form-label {
-  color: #f44336;
 }
 
 .checkbox-adv,

@@ -8,22 +8,26 @@
     var pluginDataName = "plugin_" + pluginName;
 
     function Plugin(element, options) {
-        this.element = element;
-        this.$element = $(element);
-        this.target = options.target;
-        this.$target = $(options.target);
-        this.maxLength = options.maxLength;
-        this.init();
-    }
+        // To avoid scope issues, use 'that' instead of 'this'
+        // to reference this class from internal events and functions.
+        var that = this;
 
-    Plugin.prototype = {
-        init: function() {
-            this.$target.on('input keyup', function(event) {
-                this.$element.html(this.$target.val().length + '/' + this.maxLength);
-                
-            });
+        that.element = element;
+        that.$element = $(element);
+        that.target = options.target;
+        that.$target = $(options.target);
+        that.maxLength = options.maxLength;
+
+        that.init = function() {
+            that.$target.bind('keyup.textcounter click.textcounter blur.textcounter focus.textcounter change.textcounter paste.textcounter', that.checkCounter).trigger('click.textcounter');
         }
-    };
+
+        that.checkCounter = function() {
+            that.$element.html(that.$target.val().length + '/' + that.maxLength);
+        }
+
+        that.init();
+    }
 
     $.fn[pluginName] = function (options) {
         this.each(function() {

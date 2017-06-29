@@ -185,135 +185,160 @@
 								</div>
 							</div>
 						</div>
-						<form>
-							<fieldset>
-								<legend class="access-hide">Text Fields</legend>
-								<h2 class="content-sub-heading">Input</h2>
-								<div class="card">
-									<div class="card-main">
-										<div class="card-inner">
-<div class="form-group form-group-label">
-	<label class="floating-label" for="ui_floating_label_example">Input</label>
-	<input type="text" id="ui_floating_label_example" class="form-control">
-</div>
-<div class="form-group form-group-label">
-	<label class="floating-label" for="ui_floating_label_example_value">Input</label>
-	<input type="text" id="ui_floating_label_example_value" class="form-control" value="something has already been written down">
-</div>
+						<legend class="access-hide">Text Fields</legend>
+						<h2 class="content-sub-heading">Input</h2>
+						<div class="card">
+							<div class="card-main">
+								<div class="card-inner">
+									<div class="form-group form-group-label">
+										<label class="floating-label" for="ui_input">Label</label>
+										<input class="form-control" id="ui_input" type="text">
+										<div class="form-help"></div>
+									</div>
 <pre>
 &lt;div class="form-group form-group-label"&gt;
     &lt;label class="floating-label" for="..."&gt; ... &lt;/label&gt;
     &lt;input class="form-control" id="..." type="text"&gt;
+    &lt;div class="form-help"&gt;&lt;/div&gt;
 &lt;/div&gt;
 </pre>
-										</div>
-									</div>
 								</div>
-								<h2 class="content-sub-heading">Select</h2>
-								<div class="card">
-									<div class="card-main">
-										<div class="card-inner">
-											<div class="form-group form-group-label">
-												<label class="floating-label required" for="ui_floating_label_example_select">Select</label>
-												<select id="ui_floating_label_example_select" class="form-control">
-													<option></option>
-													<option value="1">1</option>
-													<option value="2">2</option>
-													<option value="3">3</option>
-												</select>
-												<div class="form-help"></div>
-											</div>
+							</div>
+						</div>
+						<h2 class="content-sub-heading">Select</h2>
+						<div class="card">
+							<div class="card-main">
+								<div class="card-inner">
+									<div class="form-group form-group-label">
+										<label class="floating-label" for="ui_select">Label</label>
+										<select class="form-control" id="ui_select">
+											<option></option>
+											<option value="1">1</option>
+											<option value="2">2</option>
+											<option value="3">3</option>
+										</select>
+										<div class="form-help"></div>
+									</div>
 <pre>
 &lt;div class="form-group form-group-label"&gt;
     &lt;label class="floating-label" for="..."&gt; ... &lt;/label&gt;
     &lt;select class="form-control" id="..."&gt;
-        &lt;option value="..."&gt; ... &lt;/option&gt;
         ...
     &lt;/select&gt;
+    &lt;div class="form-help"&gt;&lt;/div&gt;
 &lt;/div&gt;
 </pre>
-										</div>
-									</div>
 								</div>
-								<h2 class="content-sub-heading">Character counter</h2>
-								<div class="card">
-									<div class="card-main">
-										<div class="card-inner">
-<div class="form-group form-group-label">
-	<label class="floating-label" for="ui_character_counter">Input</label>
-	<input type="text" id="ui_character_counter" class="form-control" value="teste">
-	<div class="form-help">
-		<span class="character-counter" data-target="#ui_character_counter" data-max-length="10"></span>
-	</div>
-</div>
-<pre>
-&lt;div class="form-group form-group-label"&gt;
-    &lt;label class="floating-label" for="..."&gt; ... &lt;/label&gt;
-    &lt;input class="form-control" id="..." type="text"&gt;
-&lt;/div&gt;
-</pre>
-										</div>
+							</div>
+						</div>
+						<h2 class="content-sub-heading">Textarea</h2>
+						<div class="card">
+							<div class="card-main">
+								<div class="card-inner">
+									<div class="form-group form-group-label">
+										<label class="floating-label" for="ui_textarea">Label</label>
+										<textarea class="form-control" id="ui_textarea" rows="3"></textarea>
+										<div class="form-help"></div>
 									</div>
-								</div>
-								<h2 class="content-sub-heading">Textarea</h2>
-								<div class="card">
-									<div class="card-main">
-										<div class="card-inner">
-											<div class="form-group form-group-label">
-												<label class="floating-label" for="ui_floating_label_example_textarea_autosize">Auto Expanding Textarea</label>
-												<textarea class="form-control textarea-autosize" id="ui_floating_label_example_textarea_autosize" rows="1"></textarea>
-											</div>
-<pre>
-&lt;div class="form-group form-group-label"&gt;
-    &lt;label class="floating-label" for="..."&gt; ... &lt;/label&gt;
-    &lt;textarea class="form-control textarea-autosize" id="..." rows="1"&gt;&lt;/textarea&gt;
-&lt;/div&gt;
-</pre>
-											<div class="form-group form-group-label">
-												<label class="floating-label" for="ui_floating_label_example_textarea_normal">Normal Textarea</label>
-												<textarea class="form-control" id="ui_floating_label_example_textarea_normal" rows="3"></textarea>
-											</div>
 <pre>
 &lt;div class="form-group form-group-label"&gt;
     &lt;label class="floating-label" for="..."&gt; ... &lt;/label&gt;
     &lt;textarea class="form-control" id="..." rows="..."&gt;&lt;/textarea&gt;
 &lt;/div&gt;
 </pre>
+									<h3 class="h5">Auto Expanding Textarea</h3>
+									<div class="form-group form-group-label">
+										<label class="floating-label" for="ui_textarea_autosize">Label</label>
+										<textarea class="form-control textarea-autosize" id="ui_textarea_autosize" rows="1"></textarea>
+										<div class="form-help"></div>
+									</div>
+<pre>
+&lt;div class="form-group form-group-label"&gt;
+    &lt;label class="floating-label" for="..."&gt; ... &lt;/label&gt;
+    &lt;textarea class="form-control textarea-autosize" id="..." rows="1"&gt;&lt;/textarea&gt;
+&lt;/div&gt;
+</pre>
+								</div>
+							</div>
+						</div>
+						<h2 class="content-sub-heading">Form Helper</h2>
+						<div class="card">
+							<div class="card-main">
+								<div class="card-inner">
+									<div class="form-group form-group-label">
+										<label class="floating-label" for="ui_helper">Label</label>
+										<input class="form-control" id="ui_helper" type="text">
+										<div class="form-help">
+											Helper text
+										</div>
+									</div>
+<pre>
+&lt;div class="form-group form-group-label"&gt;
+    &lt;label class="floating-label" for="..."&gt; ... &lt;/label&gt;
+    &lt;input class="form-control" id="..." type="text"&gt;
+    &lt;div class="form-help"&gt;
+        ...
+    &lt;/div&gt;
+&lt;/div&gt;
+</pre>
+									<h3 class="h5">Error Message</h3>
+									<div class="form-group form-group-label">
+										<label class="floating-label" for="ui_error_message">Label</label>
+										<input class="form-control" id="ui_error_message" type="text">
+										<div class="form-help">
+											<span class="error-message">Error message</span>
+										</div>
+									</div>
+<pre>
+&lt;div class="form-group form-group-label"&gt;
+    &lt;label class="floating-label" for="..."&gt; ... &lt;/label&gt;
+    &lt;input class="form-control" id="..." type="text"&gt;
+    &lt;div class="form-help"&gt;
+        &lt;span class="error-message"&gt; ... &lt;/span&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</pre>
+									<h3 class="h5">Character Counter</h3>
+									<div class="form-group form-group-label">
+										<label class="floating-label" for="ui_character_counter">Label</label>
+										<input class="form-control" id="ui_character_counter" type="text" maxlength="10">
+										<div class="form-help">
+											<span class="character-counter" data-target="#ui_character_counter" data-max-length="10"></span>
+										</div>
+									</div>
+<pre>
+&lt;div class="form-group form-group-label"&gt;
+    &lt;label class="floating-label" for="..."&gt; ... &lt;/label&gt;
+    &lt;input class="form-control" id="..." type="text" maxlength="10"&gt;
+    &lt;div class="form-help"&gt;
+        &lt;span class="character-counter" data-target="#..." data-max-length="10"&gt;&lt;/span&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</pre>
+								</div>
+							</div>
+						</div>
+						<h2 class="content-sub-heading">Text Field States</h2>
+						<div class="card">
+							<div class="card-main">
+								<div class="card-inner">
+									<div class="form-group form-group-label">
+										<label class="floating-label" for="ui_disabled">Disabled Input</label>
+										<input class="form-control" id="ui_disabled" type="text" disabled>
+										<div class="form-help">
+											<code>disabled</code>
+										</div>
+									</div>
+									<div class="form-group form-group-label">
+										<label class="floating-label required" for="ui_required">Required Input</label>
+										<input class="form-control" id="ui_required" type="text">
+										<div class="form-help">
+											Add <code>.required</code> to label
 										</div>
 									</div>
 								</div>
-								<div class="card">
-									<div class="card-main">
-										<div class="card-inner">
-<div class="form-group form-group-label">
-	<label class="floating-label" for="ui_floating_label_example_disabled">Disabled Input</label>
-	<input class="form-control" id="ui_floating_label_example_disabled" type="text" disabled>
-	<div class="form-help">
-		<code>disabled</code>
-	</div>
-</div>
-<fieldset disabled>
-	<div class="form-group form-group-label">
-		<label class="floating-label" for="ui_floating_label_example_disabled">Disabled Input</label>
-		<input class="form-control" id="ui_floating_label_example_disabled" type="text" value="Teste teste">
-		<div class="form-help">
-			<code>disabled</code>
-		</div>
-	</div>
-</fieldset>
-<div class="form-group form-group-label">
-	<label class="floating-label" for="ui_floating_label_example_readonly">Readonly Input</label>
-	<input class="form-control" id="ui_floating_label_example_readonly" type="text" value="Readonly" readonly>
-	<div class="form-help">
-		<code>readonly</code>
-	</div>
-</div>
-										</div>
-									</div>
-								</div>
-							</fieldset>
-							<button class="access-hide" type="submit">Submit Button</button>
-						</form>
+							</div>
+						</div>
 					</section>
 				</div>
 			</div>
