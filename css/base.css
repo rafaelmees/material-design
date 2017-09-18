@@ -2940,7 +2940,7 @@ html.no-touchevents .fbtn:hover > .fbtn-text {
   margin-right: -4px;
   margin-left: 4px;
   font-size: 1.4em;
-  vertical-align: -20%;
+  vertical-align: -26%;
 }
 .chip.deletable:hover {
   background-color: #727272;
