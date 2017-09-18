@@ -1,257 +1,253 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta content="IE=edge" http-equiv="X-UA-Compatible">
-	<meta content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no, width=device-width" name="viewport">
-	<title>Navigation Drawers - Material</title>
+    <meta charset="UTF-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no, width=device-width" name="viewport">
+    <title>Navigation Drawers - Material</title>
 
-	<!-- css -->
-	<link href="../css/base.css" rel="stylesheet">
-	<link href="../css/project.css" rel="stylesheet">
-
-	<!-- favicon -->
-	<!-- ... -->
+    <link href="../css/base.css" rel="stylesheet">
+    <link href="../css/project.css" rel="stylesheet">
 </head>
 <body class="page-brand">
-	<nav class="menu menu-left nav-drawer" id="ui_menu">
-		<div class="menu-scroll">
-			<div class="menu-top">
-				<div class="menu-top-img">
-					<img alt="John Smith" src="../images/samples/landscape.jpg">
-				</div>
-				<div class="menu-top-info">
-					<a class="menu-top-user" href="javascript:void(0)"><span class="avatar avatar-inline margin-right"><img alt="alt text for John Smith avatar" src="../images/users/avatar-001.jpg"></span>John Smith</a>
-				</div>
-				<div class="menu-top-info-sub">
-					<small>Some additional information about John Smith</small>
-				</div>
-			</div>
-			<div class="menu-content">
-				<a class="menu-logo" href="index.html">Material</a>
-				<ul class="nav">
-					<li>
-						<a class="waves-attach" data-toggle="collapse" href="#ui_menu_components">
-							<i class="icon icon-lg">settings</i>
-							Components
-						</a>
-						<ul class="menu-collapse collapse in" id="ui_menu_components">
-							<li>
-								<a class="waves-attach" href="ui-button.html">Buttons</a>
-							</li>
-							<li>
-								<a class="waves-attach" href="ui-button-fab.html">Buttons: Floating Action Button</a>
-							</li>
-							<li>
-								<a class="waves-attach" href="ui-card.html">Cards</a>
-							</li>
-							<li>
-								<a class="waves-attach" href="ui-chip.html">Chips</a>
-							</li>
-							<li>
-								<a class="waves-attach" href="ui-data-table.html">Data Tables</a>
-							</li>
-							<li>
-								<a class="waves-attach" href="ui-dialog.html">Dialogs</a>
-							</li>
-							<li>
-								<a class="waves-attach" href="ui-dropdown-menu.html">Menus</a>
-							</li>
-							<li class="active">
-								<a class="waves-attach" href="ui-nav-drawer.html">Navigation Drawers</a>
-							</li>
-							<li>
-								<a class="waves-attach" href="ui-picker.html">Pickers</a>
-							</li>
-							<li>
-								<a class="waves-attach" href="ui-progress.html">Progress</a>
-							</li>
-							<li>
-								<a class="waves-attach" href="ui-selection-control.html">Selection Controls</a>
-							</li>
-							<li>
-								<a class="waves-attach" href="ui-snackbar.html">Snackbars</a>
-							</li>
-							<li>
-								<a class="waves-attach" href="ui-stepper.html">Steppers</a>
-							</li>
-							<li>
-								<a class="waves-attach" href="ui-tab.html">Tabs</a>
-							</li>
-							<li>
-								<a class="waves-attach" href="ui-text-field.html">Text Fields</a>
-							</li>
-							<li>
-								<a class="waves-attach" href="ui-toolbar.html">Toolbars</a>
-							</li>
-						</ul>
-					</li>
-					<li>
-						<a class="collapsed waves-attach" data-toggle="collapse" href="#ui_menu_extras">
-							<i class="icon icon-lg">settings</i>
-							Extras
-						</a>
-						<ul class="menu-collapse collapse" id="ui_menu_extras">
-							<li>
-								<a class="waves-attach" href="ui-avatar.html">Avatars</a>
-							</li>
-							<li>
-								<a class="waves-attach" href="ui-icon.html">Icons</a>
-							</li>
-							<li>
-								<a class="waves-attach" href="ui-label.html">Labels</a>
-							</li>
-							<li>
-								<a class="waves-attach" href="ui-nav.html">Navs</a>
-							</li>
-							<li>
-								<a class="waves-attach" href="ui-tile.html">Tiles</a>
-							</li>
-						</ul>
-					</li>
-					<li>
-						<a class="collapsed waves-attach" data-toggle="collapse" href="#ui_menu_javascript">
-							<i class="icon icon-lg">settings</i>
-							Javascript
-						</a>
-						<ul class="menu-collapse collapse" id="ui_menu_javascript">
-							<li>
-								<a class="waves-attach" href="ui-affix.html">Affix</a>
-							</li>
-							<li>
-								<a class="waves-attach" href="ui-collapse.html">Collapse</a>
-							</li>
-							<li>
-								<a class="waves-attach" href="ui-dropdown-menu.html">Dropdown</a>
-							</li>
-							<li>
-								<a class="waves-attach" href="ui-modal.html">Modals</a>
-							</li>
-							<li>
-								<a class="waves-attach" href="ui-tab.html">Togglable Tabs</a>
-							</li>
-						</ul>
-					</li>
-					<li>
-						<a class="collapsed waves-attach" data-toggle="collapse" href="#ui_menu_samples">
-							<i class="icon icon-lg">settings</i>
-							Sample Pages
-						</a>
-						<ul class="menu-collapse collapse" id="ui_menu_samples">
-							<li>
-								<a class="waves-attach" href="page-login.html">Login Page</a>
-							</li>
-							<li>
-								<a class="waves-attach" href="page-picker.html">Picker Page</a>
-							</li>
-						</ul>
-					</li>
-				</ul>
-			</div>
-		</div>
-	</nav>
-	<header class="header header-transparent header-waterfall ui-header">
-		<ul class="nav nav-list pull-left">
-			<li>
-				<a data-toggle="menu" href="#ui_menu">
-					<span class="icon icon-lg">menu</span>
-				</a>
-			</li>
-		</ul>
+    <nav class="menu menu-left nav-drawer" id="ui_menu">
+        <div class="menu-scroll">
+            <div class="menu-top">
+                <div class="menu-top-img">
+                    <img alt="John Smith" src="../images/samples/landscape.jpg">
+                </div>
+                <div class="menu-top-info">
+                    <a class="menu-top-user" href="javascript:void(0)"><span class="avatar avatar-inline margin-right"><img alt="alt text for John Smith avatar" src="../images/users/avatar-001.jpg"></span>John Smith</a>
+                </div>
+                <div class="menu-top-info-sub">
+                    <small>Some additional information about John Smith</small>
+                </div>
+            </div>
+            <div class="menu-content">
+                <a class="menu-logo" href="index.html">Material</a>
+                <ul class="nav">
+                    <li>
+                        <a class="waves-attach" data-toggle="collapse" href="#ui_menu_components">
+                            <i class="icon icon-lg">settings</i>
+                            Components
+                        </a>
+                        <ul class="menu-collapse collapse in" id="ui_menu_components">
+                            <li>
+                                <a class="waves-attach" href="ui-button.html">Buttons</a>
+                            </li>
+                            <li>
+                                <a class="waves-attach" href="ui-button-fab.html">Buttons: Floating Action Button</a>
+                            </li>
+                            <li>
+                                <a class="waves-attach" href="ui-card.html">Cards</a>
+                            </li>
+                            <li>
+                                <a class="waves-attach" href="ui-chip.html">Chips</a>
+                            </li>
+                            <li>
+                                <a class="waves-attach" href="ui-data-table.html">Data Tables</a>
+                            </li>
+                            <li>
+                                <a class="waves-attach" href="ui-dialog.html">Dialogs</a>
+                            </li>
+                            <li>
+                                <a class="waves-attach" href="ui-dropdown-menu.html">Menus</a>
+                            </li>
+                            <li class="active">
+                                <a class="waves-attach" href="ui-nav-drawer.html">Navigation Drawers</a>
+                            </li>
+                            <li>
+                                <a class="waves-attach" href="ui-picker.html">Pickers</a>
+                            </li>
+                            <li>
+                                <a class="waves-attach" href="ui-progress.html">Progress</a>
+                            </li>
+                            <li>
+                                <a class="waves-attach" href="ui-selection-control.html">Selection Controls</a>
+                            </li>
+                            <li>
+                                <a class="waves-attach" href="ui-snackbar.html">Snackbars</a>
+                            </li>
+                            <li>
+                                <a class="waves-attach" href="ui-stepper.html">Steppers</a>
+                            </li>
+                            <li>
+                                <a class="waves-attach" href="ui-tab.html">Tabs</a>
+                            </li>
+                            <li>
+                                <a class="waves-attach" href="ui-text-field.html">Text Fields</a>
+                            </li>
+                            <li>
+                                <a class="waves-attach" href="ui-toolbar.html">Toolbars</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="collapsed waves-attach" data-toggle="collapse" href="#ui_menu_extras">
+                            <i class="icon icon-lg">settings</i>
+                            Extras
+                        </a>
+                        <ul class="menu-collapse collapse" id="ui_menu_extras">
+                            <li>
+                                <a class="waves-attach" href="ui-avatar.html">Avatars</a>
+                            </li>
+                            <li>
+                                <a class="waves-attach" href="ui-icon.html">Icons</a>
+                            </li>
+                            <li>
+                                <a class="waves-attach" href="ui-label.html">Labels</a>
+                            </li>
+                            <li>
+                                <a class="waves-attach" href="ui-nav.html">Navs</a>
+                            </li>
+                            <li>
+                                <a class="waves-attach" href="ui-tile.html">Tiles</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="collapsed waves-attach" data-toggle="collapse" href="#ui_menu_javascript">
+                            <i class="icon icon-lg">settings</i>
+                            Javascript
+                        </a>
+                        <ul class="menu-collapse collapse" id="ui_menu_javascript">
+                            <li>
+                                <a class="waves-attach" href="ui-affix.html">Affix</a>
+                            </li>
+                            <li>
+                                <a class="waves-attach" href="ui-collapse.html">Collapse</a>
+                            </li>
+                            <li>
+                                <a class="waves-attach" href="ui-dropdown-menu.html">Dropdown</a>
+                            </li>
+                            <li>
+                                <a class="waves-attach" href="ui-modal.html">Modals</a>
+                            </li>
+                            <li>
+                                <a class="waves-attach" href="ui-tab.html">Togglable Tabs</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="collapsed waves-attach" data-toggle="collapse" href="#ui_menu_samples">
+                            <i class="icon icon-lg">settings</i>
+                            Sample Pages
+                        </a>
+                        <ul class="menu-collapse collapse" id="ui_menu_samples">
+                            <li>
+                                <a class="waves-attach" href="page-login.html">Login Page</a>
+                            </li>
+                            <li>
+                                <a class="waves-attach" href="page-picker.html">Picker Page</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header class="header header-transparent header-waterfall ui-header">
+        <ul class="nav nav-list pull-left">
+            <li>
+                <a data-toggle="menu" href="#ui_menu">
+                    <span class="icon icon-lg">menu</span>
+                </a>
+            </li>
+        </ul>
 
-		<a class="header-logo header-affix-hide" data-offset-top="213" data-spy="affix" href="index.html">Material</a>
-		<span class="header-logo header-affix" data-offset-top="213" data-spy="affix">Navigation Drawers</span>
+        <a class="header-logo header-affix-hide" data-offset-top="213" data-spy="affix" href="index.html">Material</a>
+        <span class="header-logo header-affix" data-offset-top="213" data-spy="affix">Navigation Drawers</span>
 
-		<ul class="nav nav-list pull-right">
-			<li class="dropdown margin-right">
-				<a class="dropdown-toggle padding-left-no padding-right-no" data-toggle="dropdown">
-					<span class="access-hide">John Smith</span>
-					<span class="avatar avatar-sm"><img alt="alt text for John Smith avatar" src="../images/users/avatar-001.jpg"></span>
-				</a>
-				<ul class="dropdown-menu dropdown-menu-right">
-					<li>
-						<a class="waves-attach" href="javascript:void(0)">
-							<i class="icon icon-lg">account_box</i>
-							Profile Settings
-						</a>
-					</li>
-					<li>
-						<a class="waves-attach" href="javascript:void(0)">
-							<i class="icon icon-lg">add_to_photos</i>
-							Upload Photo
-						</a>
-					</li>
-					<li>
-						<a class="waves-attach" href="page-login.html">
-							<i class="icon icon-lg">exit_to_app</i>
-							Logout
-						</a>
-					</li>
-				</ul>
-			</li>
-		</ul>
-	</header>
-	<main class="content">
-		<div class="content-header ui-content-header">
-			<div class="container">
-				<div class="row">
-					<div class="col-xx-12">
-						<h1 class="content-heading">Navigation Drawers</h1>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="container">
-			<div class="row">
-				<div class="col-xx-12 padding-xx-no padding-xs-no">
-					<section class="content-inner margin-top-no">
-						<div class="card">
-							<div class="card-main">
-								<div class="card-inner">
-									<p>The navigation drawer slides in from the left. It is a common pattern found in Google apps and sites.</p>
-								</div>
-							</div>
-						</div>
-						<h2 class="content-sub-heading">Examples</h2>
-						<div class="card">
-							<div class="card-main">
-								<div class="card-header">
-									<div class="card-inner">
-										<h3 class="h5 margin-bottom-no margin-top-no">Permanent</h3>
-									</div>
-								</div>
-								<div class="card-inner">
-									<p>The navigation drawer on the left is a live demo of a permanent navigation drawer. Permanent navigation drawers are always visible and pinned to the left edge.</p>
-									<p><strong>N.B.</strong> Permanent navigation drawers are recommended for desktop, they will turn into temporary navigation drawers on mobile and tablets.</p>
-								</div>
-							</div>
-						</div>
-						<div class="card">
-							<div class="card-main">
-								<div class="card-header">
-									<div class="card-inner">
-										<h3 class="h5 margin-bottom-no margin-top-no">Temporary</h3>
-									</div>
-								</div>
-								<div class="card-inner">
-									<p>The navigation drawer on the right is a live demo of a temporary navigation drawer. Temporary navigation drawers can toggle open or closed. Closed by default, the drawer opens temporarily above all other content until a section is selected.</p>
-								</div>
-							</div>
-						</div>
-					</section>
-				</div>
-			</div>
-		</div>
-	</main>
-	<footer class="ui-footer">
-		<div class="container">
-			<p>Material</p>
-		</div>
-	</footer>
+        <ul class="nav nav-list pull-right">
+            <li class="dropdown margin-right">
+                <a class="dropdown-toggle padding-left-no padding-right-no" data-toggle="dropdown">
+                    <span class="access-hide">John Smith</span>
+                    <span class="avatar avatar-sm"><img alt="alt text for John Smith avatar" src="../images/users/avatar-001.jpg"></span>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-right">
+                    <li>
+                        <a class="waves-attach" href="javascript:void(0)">
+                            <i class="icon icon-lg">account_box</i>
+                            Profile Settings
+                        </a>
+                    </li>
+                    <li>
+                        <a class="waves-attach" href="javascript:void(0)">
+                            <i class="icon icon-lg">add_to_photos</i>
+                            Upload Photo
+                        </a>
+                    </li>
+                    <li>
+                        <a class="waves-attach" href="page-login.html">
+                            <i class="icon icon-lg">exit_to_app</i>
+                            Logout
+                        </a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </header>
+    <main class="content">
+        <div class="content-header ui-content-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xx-12">
+                        <h1 class="content-heading">Navigation Drawers</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-xx-12 padding-xx-no padding-xs-no">
+                    <section class="content-inner margin-top-no">
+                        <div class="card">
+                            <div class="card-main">
+                                <div class="card-inner">
+                                    <p>The navigation drawer slides in from the left. It is a common pattern found in Google apps and sites.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <h2 class="content-sub-heading">Examples</h2>
+                        <div class="card">
+                            <div class="card-main">
+                                <div class="card-header">
+                                    <div class="card-inner">
+                                        <h3 class="h5 margin-bottom-no margin-top-no">Permanent</h3>
+                                    </div>
+                                </div>
+                                <div class="card-inner">
+                                    <p>The navigation drawer on the left is a live demo of a permanent navigation drawer. Permanent navigation drawers are always visible and pinned to the left edge.</p>
+                                    <p><strong>N.B.</strong> Permanent navigation drawers are recommended for desktop, they will turn into temporary navigation drawers on mobile and tablets.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-main">
+                                <div class="card-header">
+                                    <div class="card-inner">
+                                        <h3 class="h5 margin-bottom-no margin-top-no">Temporary</h3>
+                                    </div>
+                                </div>
+                                <div class="card-inner">
+                                    <p>The navigation drawer on the right is a live demo of a temporary navigation drawer. Temporary navigation drawers can toggle open or closed. Closed by default, the drawer opens temporarily above all other content until a section is selected.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="ui-footer">
+        <div class="container">
+            <p>Material</p>
+        </div>
+    </footer>
 
-	<!-- js -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.js"></script>
-	<script src="../js/base.js"></script>
-	<script src="../js/project.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.js"></script>
+    <script src="../js/base.js"></script>
+    <script src="../js/project.js"></script>
 </body>
 </html>
+
