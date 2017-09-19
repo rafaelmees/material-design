@@ -123,6 +123,26 @@
 	}
 }
 
+.margin {
+	margin: $margin-md !important;
+}
+
+.margin-lg {
+	margin: $margin-lg !important;
+}
+
+.margin-no {
+	margin: 0 !important;
+}
+
+.margin-sm {
+	margin: $margin-sm !important;
+}
+
+.margin-xs {
+	margin: $margin-base !important;
+}
+
 .margin-bottom {
 	margin-bottom: $margin-md !important;
 }
@@ -161,10 +181,6 @@
 
 .margin-left-xs {
 	margin-left: ($grid-gutter / 4) !important;
-}
-
-.margin-no {
-	margin: 0 !important;
 }
 
 .margin-right {

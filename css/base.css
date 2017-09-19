@@ -1835,6 +1835,26 @@ template,
   padding-left: 8px;
 }
 
+.margin {
+  margin: 24px !important;
+}
+
+.margin-lg {
+  margin: 48px !important;
+}
+
+.margin-no {
+  margin: 0 !important;
+}
+
+.margin-sm {
+  margin: 12px !important;
+}
+
+.margin-xs {
+  margin: 8px !important;
+}
+
 .margin-bottom {
   margin-bottom: 24px !important;
 }
@@ -1873,10 +1893,6 @@ template,
 
 .margin-left-xs {
   margin-left: 4px !important;
-}
-
-.margin-no {
-  margin: 0 !important;
 }
 
 .margin-right {
@@ -2321,9 +2337,9 @@ template,
 }
 
 .avatar-lg {
-  height: 80px;
-  line-height: 80px;
-  width: 80px;
+  height: 56px;
+  line-height: 56px;
+  width: 56px;
 }
 
 .avatar-sm {
