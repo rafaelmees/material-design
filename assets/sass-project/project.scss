@@ -7,25 +7,26 @@
 @import "../sass/var/variables";
 
 // project
-	body {
-		padding-bottom: ($line-height + $margin-sm * 4 + 1);
-	}
+    body {
+        padding-bottom: ($line-height + $margin-sm * 4 + 1);
+    }
 
-	.ui-footer {
-		border-top: 1px solid $black-divider;
-		text-align: center;
-		padding-top: $margin-sm;
-		padding-bottom: $margin-sm;
-		position: absolute;
-			bottom: 0;
-			right: 0;
-			left: 0;
-	}
+    .ui-footer {
+        border-top: 1px solid $black-divider;
+        text-align: center;
+        padding-top: $margin-sm;
+        padding-bottom: $margin-sm;
+        position: absolute;
+            bottom: 0;
+            right: 0;
+            left: 0;
+    }
 
-	.ui-header .dropdown.open .dropdown-toggle {
-		background-color: transparent;
-	}
+    .ui-header .dropdown.open .dropdown-toggle {
+        background-color: transparent;
+    }
 
-	@import "templates/page-picker";
-	@import "templates/ui-card";
-	@import "templates/ui-tab";
+    @import "templates/page-picker";
+    @import "templates/ui-card";
+    @import "templates/ui-tab";
+
